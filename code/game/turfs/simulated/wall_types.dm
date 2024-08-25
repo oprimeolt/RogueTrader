@@ -1,4 +1,5 @@
 //Commonly used
+
 /turf/simulated/wall/prepainted
 	paint_color = COLOR_GUNMETAL
 
@@ -159,6 +160,49 @@
 
 /turf/simulated/wall/alium/New(newloc)
 	..(newloc,MATERIAL_ALIENALLOY)
+
+// Imperial Walls -- PLAN: Make wall/warhammer walls have their own materials and construction stuff just like r_wall does.
+/turf/simulated/wall/warhammer // Non-Bay Walls.
+	var/walltype = "rrwall"
+	name = "Metal Wall"
+	desc = "An ancient wall of imperial origin."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "rrwall0"
+	walltype = "rrwall"
+	blend_turfs = list(/turf/simulated/wall)
+
+/turf/simulated/wall/warhammer/New(newloc)
+	..(newloc,MATERIAL_TITANIUM)
+
+/turf/simulated/wall/warhammer/reinforced
+	icon_state = "r_titanium"
+
+/turf/simulated/wall/warhammer/reinforced/New(newloc)
+	..(newloc, MATERIAL_TITANIUM,MATERIAL_TITANIUM)
+
+/turf/simulated/wall/warhammer/techno // Non-Bay Walls.
+	walltype = "rrwall"
+	name = "Mechanicus Wall"
+	desc = "An ancient wall of imperial origin."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "techno0"
+	walltype = "techno"
+
+
+
+/*
+/turf/simulated/wall/r_wall/imperial // Bay Walls
+	icon_state = "colony"
+	blend_turfs = list(/turf/simulated/wall)
+
+/turf/simulated/wall/r_wall/imperial/almayer
+	icon_state = "wwall"
+	blend_turfs = list(/turf/simulated/wall)
+/turf/simulated/wall/r_wall/imperial/New(newloc, reinforce = 0)
+	..(newloc, MATERIAL_CULT, reinforce ? MATERIAL_REINFORCED_CULT : null)
+*/
+
+
 
 //Cult wall
 /turf/simulated/wall/cult

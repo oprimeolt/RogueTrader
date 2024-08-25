@@ -143,7 +143,7 @@
 	var/static/hostedby
 
 	/// An observer must wait this many minutes before being able to return to the main menu
-	var/static/respawn_delay = 30
+	var/static/respawn_delay = 10
 
 	/// An observer that has returned to the main menu must wait this many minutes before rejoining
 	var/static/respawn_menu_delay = FALSE
@@ -225,9 +225,9 @@
 
 	//game_options.txt configs
 
-	var/static/health_threshold_dead = -100
+	var/static/health_threshold_dead = -70
 
-	var/static/organ_health_multiplier = 0.9
+	var/static/organ_health_multiplier = 0.85
 
 	var/static/organ_regeneration_multiplier = 0.25
 
@@ -251,13 +251,13 @@
 	var/static/no_click_cooldown = FALSE
 
 	/// Modifier for ticks between moves while running
-	var/static/run_delay = 2
+	var/static/run_delay = 1.7
 
 	/// Modifier for ticks between moves while walking
-	var/static/walk_delay = 4
+	var/static/walk_delay = 3
 
 	/// Modifier for ticks between moves while creeping
-	var/static/creep_delay = 6
+	var/static/creep_delay = 4.5
 
 	/// Modifier for base stamina cost while sprinting
 	var/static/minimum_sprint_cost = 0.8
@@ -392,7 +392,7 @@
 	var/static/error_msg_delay = 50
 
 	/// Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
-	var/static/max_gear_cost = 10
+	var/static/max_gear_cost = 0
 
 	/// Whether players should be allowed to print IC circuits from scripts.
 	var/static/allow_ic_printing = TRUE

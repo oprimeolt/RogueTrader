@@ -10,8 +10,8 @@
 	id = "awaysite_skrell_scout"
 	description = "A Skrellian SDTF scouting vessel."
 	suffixes = list("skrellscoutship/skrellscoutship_revamp.dmm")
-	spawn_cost = 0.5
-	player_cost = 4
+	spawn_cost = 0
+	player_cost = 0
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship, /datum/shuttle/autodock/overmap/skrellscoutshuttle)
 	apc_test_exempt_areas = list(
 		/area/ship/skrellscoutship/externalwing/port = NO_SCRUBBER|NO_VENT|NO_APC,

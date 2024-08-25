@@ -17,8 +17,8 @@ reboot_called
 atupdate
 
 # ignore config, but not subdirs
-!config/*/
-config/*
+#!config/*/
+#config/*
 sql/test_db
 
 # VisualStudioCode
@@ -56,3 +56,6 @@ package-lock.json
 
 # ignore local selected map
 /maps/using.dm
+
+# ignore port folder
+ravenor/

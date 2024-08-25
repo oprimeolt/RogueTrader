@@ -11,8 +11,8 @@
 	id = "awaysite_voxship2"
 	description = "Vox Scavenger Ship."
 	suffixes = list("voxship/voxship-2.dmm")
-	spawn_cost = 0.5
-	player_cost = 4
+	spawn_cost = 0
+	player_cost = 0
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_ship, /datum/shuttle/autodock/overmap/vox_lander)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
 	spawn_weight = 0.67

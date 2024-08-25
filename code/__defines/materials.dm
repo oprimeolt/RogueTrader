@@ -18,6 +18,8 @@
 #define MATERIAL_BORON_GLASS             "borosilicate glass"
 #define MATERIAL_MARBLE                  "marble"
 #define MATERIAL_CULT                    "cult"
+#define MATERIAL_IMPERIAL                "imperial"
+#define MATERIAL_COLONY                  "colony"
 #define MATERIAL_REINFORCED_CULT         "cult2"
 #define MATERIAL_VOX                     "voxalloy"
 #define MATERIAL_TITANIUM                "titanium"

@@ -6,7 +6,7 @@
 	damage_type = DAMAGE_BRUTE
 	damage_flags = DAMAGE_FLAG_BULLET | DAMAGE_FLAG_SHARP
 	embed = TRUE
-	penetration_modifier = 1.0
+	penetration_modifier = 0.4
 	space_knockback = 1
 	var/mob_passthrough_check = 0
 	var/is_pellet = FALSE
@@ -130,12 +130,12 @@
 
 /obj/item/projectile/bullet/pistol/holdout
 	damage = 40
-	penetration_modifier = 1.2
+	penetration_modifier = 0.3
 	distance_falloff = 4
 
 /obj/item/projectile/bullet/pistol/strong
 	damage = 50
-	penetration_modifier = 0.8
+	penetration_modifier = 0.5
 	distance_falloff = 2.5
 	armor_penetration = 15
 
@@ -193,7 +193,7 @@
 	range_step = 3
 	base_spread = 99
 	spread_step = 2
-	penetration_modifier = 0.5
+	penetration_modifier = 0.4
 	hitchance_mod = 5
 
 /* "Rifle" rounds */
@@ -215,14 +215,14 @@
 	weaken = 3
 	penetrating = 3
 	armor_penetration = 70
-	penetration_modifier = 1.2
+	penetration_modifier = 1
 	distance_falloff = 0.5
 
 /obj/item/projectile/bullet/rifle/shell/apds
 	damage = 70
 	penetrating = 5
 	armor_penetration = 80
-	penetration_modifier = 1.5
+	penetration_modifier = 1.2
 
 /* Miscellaneous */
 /obj/item/projectile/bullet/gyro

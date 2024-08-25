@@ -76,7 +76,7 @@
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/headset_deckofficer
-	name = "deck chief's radio headset"
+	name = "deck chief's vox headset"
 	desc = "The headset of the chief box pusher."
 	icon_state = "cargo_headset"
 	item_state = "headset"
@@ -89,7 +89,7 @@
 	max_keys = 3
 
 /obj/item/device/radio/headset/headset_chief_steward
-	name = "chief steward's radio headset"
+	name = "chief steward's vox headset"
 	desc = "The headset of the menu maker."
 	icon_state = "srv_headset"
 	item_state = "headset"

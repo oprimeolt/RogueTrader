@@ -139,7 +139,7 @@
 	projectile_type = /obj/item/projectile/beam/sniper
 	one_hand_penalty = 5 // The weapon itself is heavy, and the long barrel makes it hard to hold steady with just one hand.
 	slot_flags = SLOT_BACK
-	charge_cost = 40
+	charge_cost = 60
 	max_shots = 8
 	fire_delay = 35
 	force = 10
@@ -152,6 +152,44 @@
 /obj/item/gun/energy/sniperrifle/on_update_icon()
 	..()
 	item_state_slots[slot_back_str] = icon_state //so that the on-back overlay uses the different charged states
+
+// WARHAMMER 40k
+
+
+/obj/item/gun/energy/lasgun
+	name = "Kantrael M36 Lasgun"
+	desc = " Of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability. The Planet broke before the guard did."
+	icon = 'icons/obj/guns/40k.dmi'
+	icon_state = "lasgun"
+	item_state = "lasgun"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 13
+	one_hand_penalty = 2
+	fire_delay = 2.5
+	accuracy = 0
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/lasgun
+	charge_cost = 20
+	cell_type = /obj/item/cell/device/high/laspack
+	wielded_item_state = "lasgun-wielded"
+	// sales_price = 35
+
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=1, burst_delay=null),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=35, burst=1, burst_delay=2),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=3, burst_delay=3)
+		)
+
+
+
+
+
+
+
+
+
 
 ////////Laser Tag////////////////////
 

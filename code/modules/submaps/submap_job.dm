@@ -8,7 +8,7 @@
 	total_positions = 4
 	outfit_type = /singleton/hierarchy/outfit/job/assistant
 	hud_icon = "hudblank"
-	available_by_default = FALSE
+	available_by_default = TRUE
 	allowed_ranks = null
 	allowed_branches = null
 	skill_points = 25

@@ -164,7 +164,7 @@
 					to_chat(user, SPAN_WARNING("\The [A] won't fit into [src]."))
 					return
 				if(ammo_magazine)
-					if(user.a_intent == I_HELP || user.a_intent == I_DISARM || !user.skill_check(SKILL_WEAPONS, SKILL_EXPERIENCED))
+					if(user.a_intent == I_HELP || user.a_intent == I_DISARM || !user.skill_check(SKILL_WEAPONS, SKILL_TRAINED))
 						to_chat(user, SPAN_WARNING("[src] already has a magazine loaded."))//already a magazine here
 						return
 					else

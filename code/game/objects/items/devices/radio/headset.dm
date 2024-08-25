@@ -1,5 +1,5 @@
 /obj/item/device/radio/headset
-	name = "radio headset"
+	name = "vox headset"
 	desc = "An updated, modular intercom that fits over the head. Takes encryption keys."
 	icon = 'icons/obj/headsets.dmi'
 	var/radio_desc = ""
@@ -77,7 +77,7 @@
 /obj/item/device/radio/headset/map_preset/Initialize()
 	if (preset_name)
 		var/name_lower = lowertext(preset_name)
-		name = "[name_lower] radio headset"
+		name = "[name_lower] vox headset"
 		ks1type = encryption_key
 		default_frequency = assign_away_freq(preset_name)
 		if (use_common)
@@ -120,7 +120,7 @@
 	ks1type = /obj/item/device/encryptionkey/binary
 
 /obj/item/device/radio/headset/headset_sec
-	name = "security radio headset"
+	name = "security vox headset"
 	desc = "This is used by your elite security force."
 	icon_state = "sec_headset"
 	item_state = "headset"
@@ -132,7 +132,7 @@
 	item_state = "sec_headset_alt"
 
 /obj/item/device/radio/headset/headset_eng
-	name = "engineering radio headset"
+	name = "engineering vox headset"
 	desc = "When the engineers wish to chat like girls."
 	icon_state = "eng_headset"
 	item_state = "headset"
@@ -144,14 +144,14 @@
 	item_state = "eng_headset_alt"
 
 /obj/item/device/radio/headset/headset_rob
-	name = "robotics radio headset"
+	name = "robotics vox headset"
 	desc = "Made specifically for the roboticists who cannot decide between departments."
 	icon_state = "rob_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_rob
 
 /obj/item/device/radio/headset/headset_med
-	name = "medical radio headset"
+	name = "medical vox headset"
 	desc = "A headset for the trained staff of the medbay."
 	icon_state = "med_headset"
 	item_state = "headset"
@@ -163,21 +163,21 @@
 	item_state = "med_headset_alt"
 
 /obj/item/device/radio/headset/headset_sci
-	name = "science radio headset"
+	name = "science vox headset"
 	desc = "A sciency headset. Like usual."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_sci
 
 /obj/item/device/radio/headset/headset_medsci
-	name = "medical research radio headset"
+	name = "medical research vox headset"
 	desc = "A headset that is a result of the mating between medical and science."
 	icon_state = "med_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_medsci
 
 /obj/item/device/radio/headset/headset_com
-	name = "command radio headset"
+	name = "command vox headset"
 	desc = "A headset with a commanding channel."
 	icon_state = "com_headset"
 	item_state = "headset"
@@ -275,14 +275,14 @@
 	ks1type = /obj/item/device/encryptionkey/heads/hop
 
 /obj/item/device/radio/headset/headset_service
-	name = "service radio headset"
+	name = "service vox headset"
 	desc = "Headset used by the service staff, tasked with keeping everyone full, happy and clean."
 	icon_state = "srv_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_service
 
 /obj/item/device/radio/headset/foundation
-	name = "\improper Foundation radio headset"
+	name = "\improper Foundation vox headset"
 	desc = "The headeset of the occult cavalry."
 	icon_state = "com_headset"
 	item_state = "headset"
@@ -296,20 +296,20 @@
 	ks1type = /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/headset_mining
-	name = "mining radio headset"
+	name = "mining vox headset"
 	desc = "Headset used by dwarves. It has an inbuilt subspace antenna for better reception."
 	icon_state = "mine_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_mining
 
 /obj/item/device/radio/headset/headset_mining/alt
-	name = "mining bowman radio headset"
+	name = "mining bowman vox headset"
 	icon_state = "mine_headset_alt"
 	item_state = "mine_headset_alt"
 	max_keys = 3
 
 /obj/item/device/radio/headset/headset_cargo
-	name = "supply radio headset"
+	name = "supply vox headset"
 	desc = "A headset used by the box-pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
@@ -322,14 +322,14 @@
 	max_keys = 3
 
 /obj/item/device/radio/headset/entertainment
-	name = "actor's radio headset"
+	name = "actor's vox headset"
 	desc = "specially made to make you sound less cheesy."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/entertainment
 
 /obj/item/device/radio/headset/specops
-	name = "special operations radio headset"
+	name = "special operations vox headset"
 	desc = "The headset of the spooks."
 	icon_state = "cent_headset"
 	item_state = "headset"
@@ -390,7 +390,7 @@
 		import_key_data(ekey)
 	for (var/ch_name in channels)
 		if(!radio_controller)
-			src.SetName("broken radio headset")
+			src.SetName("broken vox headset")
 			return
 		secure_radio_connections[ch_name] = radio_controller.add_object(src, radiochannels[ch_name],  RADIO_CHAT)
 

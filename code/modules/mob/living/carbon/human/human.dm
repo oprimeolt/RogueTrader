@@ -1802,12 +1802,14 @@
 		. -= 1
 	if(shock_stage > 30)
 		. -= 1
+	if(skill_check(SKILL_WEAPONS, SKILL_BASIC))
+		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_TRAINED))
 		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_EXPERIENCED))
 		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_MASTER))
-		. += 2
+		. += 1
 
 /mob/living/carbon/human/can_drown()
 	if(!internal && (!istype(wear_mask) || !wear_mask.filters_water()))

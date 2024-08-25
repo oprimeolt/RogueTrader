@@ -283,7 +283,7 @@
 /obj/random/energy
 	name = "Random Energy Weapon"
 	desc = "This is a random energy weapon."
-	icon = 'icons/obj/guns/energy_gun.dmi'
+	icon = 'icons/obj/guns/40k.dmi'
 	icon_state = "energykill100"
 
 /obj/random/energy/spawn_choices()

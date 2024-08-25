@@ -60,7 +60,7 @@
 //Objects
 
 /obj/item/device/radio/headset/ert
-	name = "emergency response team radio headset"
+	name = "emergency response team vox headset"
 	desc = "The headset of the boss's boss."
 	icon_state = "com_headset"
 	item_state = "headset"

@@ -430,7 +430,7 @@
 	var/disp_mod = dispersion[min(burst, length(dispersion))]
 	var/stood_still = last_handled
 	//Not keeping gun active will throw off aim (for non-Masters)
-	if(user.skill_check(SKILL_WEAPONS, SKILL_MASTER))
+	if(user.skill_check(SKILL_WEAPONS, SKILL_TRAINED))
 		stood_still = min(user.l_move_time, last_handled)
 	else
 		stood_still = max(user.l_move_time, last_handled)
@@ -588,8 +588,8 @@
 	zoom(user, zoom_offset, view_size)
 	if(zoom)
 		accuracy = scoped_accuracy
-		if(user.skill_check(SKILL_WEAPONS, SKILL_MASTER))
-			accuracy += 2
+		if(user.skill_check(SKILL_WEAPONS, SKILL_TRAINED))
+			accuracy += 1
 		if(screen_shake)
 			screen_shake = round(screen_shake*zoom_amount+1) //screen shake is worse when looking through a scope
 

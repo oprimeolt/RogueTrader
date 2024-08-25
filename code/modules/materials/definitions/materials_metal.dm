@@ -121,7 +121,7 @@
 	brute_armor = 7
 	wall_icon_base = "solid"
 	wall_icon_reinf = "reinf_over"
-	icon_colour = COLOR_STEEL
+	icon_colour = COLOR_GUNMETAL
 	hitsound = 'sound/weapons/smash.ogg'
 	chem_products = list(
 				/datum/reagent/iron = 19.6,
@@ -184,7 +184,7 @@
 	sheet_icon_base = "sheet-reinf"
 	wall_icon_base = "solid"
 	wall_icon_reinf = "reinf_over"
-	icon_colour = "#a8a9b2"
+	icon_colour = COLOR_WALL_GUNMETAL
 	explosion_resistance = 7.5
 	brute_armor = 8
 	burn_armor = 10
@@ -210,7 +210,7 @@
 	stack_type = /obj/item/stack/material/titanium
 	wall_icon_base = "metal"
 	door_icon_base = "metal"
-	icon_colour = "#d1e6e3"
+	icon_colour = COLOR_DARK_BLUE_GRAY
 	wall_icon_reinf = "reinf_metal"
 	construction_difficulty = MATERIAL_VERY_HARD_DIY
 	alloy_materials = null

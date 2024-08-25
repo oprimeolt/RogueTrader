@@ -1,7 +1,7 @@
 /obj/item/gun/energy/gun
 	name = "energy gun"
 	desc = "Another bestseller of Lawson Arms and the FTU, the LAEP90 Perun is a versatile energy based sidearm, capable of switching between low, medium and high power projectile settings. In other words: stun, shock or kill."
-	icon = 'icons/obj/guns/energy_gun.dmi'
+	icon = 'icons/obj/guns/40k.dmi'
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	max_shots = 10

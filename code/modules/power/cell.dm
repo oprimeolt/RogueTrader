@@ -146,13 +146,20 @@
 
 /obj/item/cell/device/standard
 	name = "standard device power cell"
-	maxcharge = 25
+	maxcharge = 100
 
 /obj/item/cell/device/high
 	name = "advanced device power cell"
 	desc = "A small power cell designed to power more energy-demanding devices."
 	icon_state = "hdevice"
-	maxcharge = 100
+	maxcharge = 200
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
+
+/obj/item/cell/device/high/laspack
+	name = "laspack"
+	desc = "A small power cell designed to power more energy-demanding devices."
+	icon_state = "hdevice"
+	maxcharge = 300
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 
 /obj/item/cell/crap
@@ -169,7 +176,7 @@
 	name = "standard power cell"
 	desc = "A standard and relatively cheap power cell, commonly used."
 	origin_tech = list(TECH_POWER = 0)
-	maxcharge = 500
+	maxcharge = 1000
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 40, MATERIAL_PLASTIC = 20)
 
 /obj/item/cell/high
@@ -177,40 +184,40 @@
 	desc = "An advanced high-grade power cell, for use in important systems."
 	origin_tech = list(TECH_POWER = 2)
 	icon_state = "hcell"
-	maxcharge = 1000
+	maxcharge = 1500
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 60, MATERIAL_PLASTIC = 20)
 
 /obj/item/cell/high/empty
 	charge = 0
 
 /obj/item/cell/super
-	name = "enhanced power cell"
+	name = "super power cell"
 	desc = "A very advanced power cell with increased energy density, for use in critical applications."
 	origin_tech = list(TECH_POWER = 5)
 	icon_state = "scell"
-	maxcharge = 2000
+	maxcharge = 2500
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 70, MATERIAL_ALUMINIUM = 20)
 
 /obj/item/cell/super/empty
 	charge = 0
 
 /obj/item/cell/hyper
-	name = "superior power cell"
+	name = "mechanicus archeotech power cell"
 	desc = "Pinnacle of power storage technology, this very expensive power cell provides the best energy density reachable with conventional electrochemical cells."
 	origin_tech = list(TECH_POWER = 6)
 	icon_state = "hpcell"
-	maxcharge = 3000
+	maxcharge = 4000
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 80, MATERIAL_ALUMINIUM = 20)
 
 /obj/item/cell/hyper/empty
 	charge = 0
 
 /obj/item/cell/infinite
-	name = "experimental power cell"
+	name = "xenos archeotech power cell"
 	desc = "This special experimental power cell has both very large capacity, and ability to recharge itself by draining power from contained bluespace pocket."
 	icon_state = "icell"
 	origin_tech =  null
-	maxcharge = 3000
+	maxcharge = 5000
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 80, MATERIAL_ALUMINIUM = 20)
 
 /obj/item/cell/infinite/check_charge()

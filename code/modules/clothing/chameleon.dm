@@ -64,7 +64,7 @@
 	item_flags = ITEM_FLAG_INVALID_FOR_CHAMELEON | ITEM_FLAG_IS_CHAMELEON_ITEM
 
 /obj/item/device/radio/headset/chameleon
-	name = "radio headset"
+	name = "vox headset"
 	icon_state = "headset"
 	item_state = "headset"
 	desc = "An updated, modular intercom that fits over the head. This one seems to have a small dial on it."

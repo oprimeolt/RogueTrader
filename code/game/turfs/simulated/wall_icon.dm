@@ -36,6 +36,15 @@
 	reinf_material = newrmaterial
 	update_material()
 
+/turf/simulated/wall/warhammer/on_update_icon()
+	var/junction = 0
+
+	for(var/turf/simulated/wall/warhammer/W in orange(src,1))
+		if(abs(src.x-W.x)-abs(src.y-W.y))
+			junction |= get_dir(src,W)
+	icon_state = "[walltype][junction]"
+	return
+
 /turf/simulated/wall/on_update_icon()
 
 	..()

@@ -39,8 +39,10 @@ var/global/list/mining_floors = list()
 
 	has_resources = 1
 
+
 /turf/simulated/mineral/Initialize()
 	. = ..()
+	icon_state = pick("rock[rand(1,13)]")
 	if (!mining_walls["[src.z]"])
 		mining_walls["[src.z]"] = list()
 	mining_walls["[src.z]"] += src

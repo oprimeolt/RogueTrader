@@ -4,7 +4,7 @@
 	temperature = T0C + 300
 	fire_sound='sound/weapons/Laser.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
-	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
+	pass_flags = PASS_FLAG_TABLE
 	damage = 40
 	damage_type = DAMAGE_BURN
 	sharp = TRUE
@@ -12,7 +12,7 @@
 	eyeblur = 4
 	hitscan = TRUE
 	invisibility = INVISIBILITY_ABSTRACT	//beam projectiles are invisible as they are rendered by the effect engine
-	penetration_modifier = 0.3
+	penetration_modifier = 0.6
 	distance_falloff = 1.5
 	damage_falloff = TRUE
 	damage_falloff_list = list(
@@ -32,6 +32,7 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 35
+	armor_penetration = 10
 	distance_falloff = 2
 	damage_falloff_list = list(
 		list(5, 0.87),
@@ -40,7 +41,43 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 10
+	armor_penetration = 15
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun
+	icon_state = "laser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
+	damage = 44
+	armor_penetration = 20
+	penetration_modifier = 0.5
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun/weak
+	icon_state = "laser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun1.ogg'
+	damage = 35
+	armor_penetration = 29
+	penetration_modifier = 0.4
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun/overcharge
+	icon_state = "heavylaser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
+	damage = 54
+	armor_penetration = 35
+	penetration_modifier = 0.7
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -340,7 +377,7 @@
 	damage_flags = 0
 	damage_type = DAMAGE_STUN
 	life_span = 3
-	penetration_modifier = 0
+	penetration_modifier = 0.4
 	var/potency_min = 4
 	var/potency_max = 6
 
@@ -369,13 +406,13 @@
 	muzzle_type = /obj/projectile/laser_particle/muzzle
 	tracer_type = /obj/projectile/laser_particle/tracer
 	impact_type = /obj/projectile/laser_particle/impact
-	penetration_modifier = 0.5
+	penetration_modifier = 0.8
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
 	damage = 20
 	armor_penetration = 20
-	penetration_modifier = 0.3
+	penetration_modifier = 0.6
 
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
