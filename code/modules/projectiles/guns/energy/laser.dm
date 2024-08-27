@@ -58,7 +58,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
-	fire_delay = 15 //old technology, and a pistol
+	fire_delay = 10 //old technology, and a pistol
 
 /obj/item/gun/energy/captain
 	name = "antique laser gun"
@@ -89,7 +89,7 @@
 	charge_cost = 40
 	max_shots = 6
 	accuracy = 2
-	fire_delay = 20
+	fire_delay = 15
 	wielded_item_state = "gun_wielded"
 
 /obj/item/gun/energy/lasercannon/mounted
@@ -127,7 +127,7 @@
 	projectile_type = /obj/item/projectile/beam/xray
 	one_hand_penalty = 1
 	w_class = ITEM_SIZE_NORMAL
-	fire_delay = 10
+	fire_delay = 5
 
 /obj/item/gun/energy/sniperrifle
 	name = "marksman energy rifle"
@@ -141,11 +141,11 @@
 	slot_flags = SLOT_BACK
 	charge_cost = 60
 	max_shots = 8
-	fire_delay = 35
+	fire_delay = 12
 	force = 10
 	w_class = ITEM_SIZE_HUGE
-	accuracy = -2 //shooting at the hip
-	scoped_accuracy = 9
+	accuracy = -1 //shooting at the hip
+	scoped_accuracy = 5
 	scope_zoom = 2
 	wielded_item_state = "gun_wielded"
 
@@ -164,9 +164,9 @@
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
-	force = 13
+	force = 14
 	one_hand_penalty = 2
-	fire_delay = 2.5
+	fire_delay = 5
 	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -174,22 +174,186 @@
 	charge_cost = 20
 	cell_type = /obj/item/cell/device/high/laspack
 	wielded_item_state = "lasgun-wielded"
-	// sales_price = 35
+	sales_price = 30
 
 	firemodes = list(
-		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=1, burst_delay=null),
-		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=35, burst=1, burst_delay=2),
-		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=3, burst_delay=3)
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=1, burst_delay=2),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=30, burst=1, burst_delay=3),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=3, burst_delay=2)
+		)
+
+/obj/item/gun/energy/lasgun/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
+
+/obj/item/gun/energy/lasgun/triplex
+	name = "Triplex Pattern Lasgun"
+	desc = " A highly versatile refined lasgun used by the Mordian Iron Guard ."
+	icon = 'icons/obj/guns/40k.dmi'
+	color = COLOR_GUNMETAL
+	icon_state = "lasgun"
+	item_state = "lasgun"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 12
+	one_hand_penalty = 3
+	fire_delay = 5
+	accuracy = 0
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/lasgun
+	charge_cost = 18
+	cell_type = /obj/item/cell/device/high/laspack
+	wielded_item_state = "lasgun-wielded"
+	sales_price = 35
+
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=18, burst=1, burst_delay=2),
+		list(mode_name="undercharge", projectile_type=/obj/item/projectile/beam/lasgun/weak, charge_cost=13, burst=1, burst_delay=1),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=27, burst=1, burst_delay=3),
+		list(mode_name="underburst", projectile_type=/obj/item/projectile/beam/lasgun/weak, charge_cost=18, burst=3, burst_delay=1),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=18, burst=3, burst_delay=2)
+		)
+
+/obj/item/gun/energy/lasgun/catachan
+	name = "Mark IV Lascarbine"
+	desc = "The Mark IV lascarbine is a special lascarbine used by the Catachan Jungle Fighters. Excellent for warfare in jungle environments due to it's bayonet and light frame"
+	icon_state = "lascarbine"
+	item_state = "lascar"
+	icon = 'icons/obj/guns/40k.dmi'
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 17
+	one_hand_penalty = 1.5
+	fire_delay = 4
+	accuracy = -0.5
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/lasgun
+	charge_cost = 20
+	cell_type = /obj/item/cell/device/high/laspack/hotshot
+	wielded_item_state = "lasgun-wielded"
+	sales_price = 45
+
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=1, burst_delay=1.5),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=30, burst=1, burst_delay=2.5),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=20, burst=3, burst_delay=1.5)
+		)
+
+/obj/item/gun/energy/lasgun/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
+
+/obj/item/gun/energy/lasgun/shitty
+	name = "Grim Lasrifle"
+	desc = "The Grim or Scrap Lasrifle is the name given to the many unsanctioned patterns of lasrifles produced in the underhives of the imperium, often sewn together with blackmarket components and stolen machinery."
+	icon_state = "semir"
+	item_state = "semir"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 13
+	one_hand_penalty = 1.5
+	fire_delay = 5
+	accuracy = 0
+	charge_cost = 22
+	wielded_item_state = "semir"
+	charge_meter = FALSE
+	cell_type = /obj/item/cell/device/standard
+	projectile_type = /obj/item/projectile/beam/lasgun/weak
+	sales_price = 7
+
+
+/obj/item/gun/energy/lasgun/lucius
+	name = "Lucius No.98 Lasgun"
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than other pattern lasguns."
+	icon_state = "lucius"
+	item_state = "luscius"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 16
+	one_hand_penalty = 1.2
+	fire_delay = 5.5
+	accuracy = 0
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/lasgun/lucius
+	charge_cost = 25
+	cell_type = /obj/item/cell/device/high/laspack
+	wielded_item_state = "luscius-wielded"
+	sales_price = 40
+
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun/lucius, charge_cost=25, burst=1, burst_delay=2.2),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/lucius/overcharge, charge_cost=35, burst=1, burst_delay=3.3),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun/lucius, charge_cost=25, burst=3, burst_delay=2.2)
+		)
+
+/obj/item/gun/energy/lasgun/accatran
+	name = "Accatran Mark VI Pattern Lasgun"
+	desc = "The Accatran Patterns are bullpup in design, affording them similar damage to that of a laspistol but with the capacity of a typical lasrifle and with a very high rate of fire for a lasgun. The choice pattern of the Elite Elysian Droptroopers."
+	icon_state = "accatran"
+	item_state = "lascar"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_NORMAL
+	force = 13
+	one_hand_penalty = 0.7
+	fire_delay = 3.5
+	accuracy = 0.1
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/lasgun/weak
+	charge_cost = 13
+	cell_type = /obj/item/cell/device/high/laspack
+	wielded_item_state = "lascar-wielded"
+	sales_price = 35
+
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun/weak, charge_cost=13, burst=1, burst_delay=1),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=19, burst=1, burst_delay=1.9),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun/weak, charge_cost=13, burst=3, burst_delay=1)
+		)
+
+/obj/item/gun/energy/lasgun/hotshot
+	name = "Ryza Pattern Hot-Shot Lasgun"
+	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
+	icon_state = "hotshotgun"
+	item_state = "lascar"
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
+	force = 14
+	one_hand_penalty = 1.7
+	fire_delay = 4.5
+	accuracy = 0.1
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/lasgun/hotshot
+	charge_cost = 35
+	cell_type = /obj/item/cell/device/high/laspack/hotshot
+	wielded_item_state = "lascar-wielded"
+	sales_price = 100
+
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun/hotshot, charge_cost=35, burst=1, burst_delay=2.2),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/hotshot/overcharge, charge_cost=45, burst=1, burst_delay=3.3),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun/hotshot, charge_cost=35, burst=3, burst_delay=2.2)
 		)
 
 
-
-
-
-
-
-
-
+/obj/item/gun/energy/lasgun/hotshot/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.25
+	slowdown_per_slot[slot_l_hand] = 0.25
 
 ////////Laser Tag////////////////////
 

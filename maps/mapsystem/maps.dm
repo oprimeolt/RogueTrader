@@ -109,16 +109,16 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/list/loadout_blacklist	//list of types of loadout items that will not be pickable
 
 	//Economy stuff
-	var/starting_money = 75000		//Money in station account
-	var/department_money = 5000		//Money in department accounts
-	var/salary_modifier	= 1			//Multiplier to starting character money
+	var/starting_money = 1000		//Money in station account
+	var/department_money = 600		//Money in department accounts
+	var/salary_modifier	= 0.06			//Multiplier to starting character money
 	var/station_departments = list()//Gets filled automatically depending on jobs allowed
 
-	var/supply_currency_name = "Credits"
-	var/supply_currency_name_short = "Cr."
-	var/local_currency_name = "thalers"
-	var/local_currency_name_singular = "thaler"
-	var/local_currency_name_short = "T"
+	var/supply_currency_name = "Scrip"
+	var/supply_currency_name_short = "S"
+	var/local_currency_name = "Scrip"
+	var/local_currency_name_singular = "Scrip"
+	var/local_currency_name_short = "S"
 
 	//Whether or not the map should include the Interlude in teleports and the BSD event as a possibility.
 	var/use_bluespace_interlude = FALSE
@@ -487,7 +487,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	vendor_account = department_accounts["Vendor"]
 
 /datum/map/proc/map_info(client/victim)
-	to_chat(victim, "<h2>Current map information</h2>")
+	to_chat(victim, "<h2>THE DAUNTLESS</h2>")
 	to_chat(victim, get_map_info())
 
 /datum/map/proc/get_map_info()

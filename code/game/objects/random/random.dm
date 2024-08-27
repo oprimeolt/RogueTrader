@@ -973,8 +973,7 @@ GLOBAL_LIST_INIT(random_backpacks, list(
 				/obj/item/spacecash/bundle/c10 = 3,
 				/obj/item/spacecash/bundle/c20 = 3,
 				/obj/item/spacecash/bundle/c50 = 2,
-				/obj/item/spacecash/bundle/c100 = 2,
-				/obj/item/spacecash/bundle/c1000 = 1)
+				/obj/item/spacecash/bundle/c100 = 2)
 
 /obj/random/documents // top secret documents for SCG eyes only
 	name = "random secret documents"

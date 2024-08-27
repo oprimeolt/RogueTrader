@@ -188,7 +188,8 @@
 	icon_state = "techno0"
 	walltype = "techno"
 
-
+/turf/simulated/wall/warhammer/techno/New(newloc)
+	..(newloc, MATERIAL_TITANIUM,MATERIAL_TITANIUM)
 
 /*
 /turf/simulated/wall/r_wall/imperial // Bay Walls

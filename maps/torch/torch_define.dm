@@ -16,26 +16,20 @@
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "\improper SEV Torch"
-	station_short = "\improper Torch"
+	station_name  = "\improper The Dauntless"
+	station_short = "\improper Dauntless"
 	dock_name     = "TBD"
-	boss_name     = "Expeditionary Command"
-	boss_short    = "Command"
-	company_name  = "Sol Central Government"
-	company_short = "SolGov"
+	boss_name     = "Lord Trader"
+	boss_short    = "RT"
+	company_name  = "The Imperium"
+	company_short = "Imperium"
 
 	map_admin_faxes = list(
-		"Expeditionary Corps Command",
-		"Expeditionary Corps Logistics",
-		"EXO Head Office",
-		"EXO Internal Affairs",
-		"SFP Territory Support",
-		"SFP Special Investigations",
-		"SFP Fugitive Recovery",
-		"Sol Fleet Mars Command",
-		"Bureau of Diplomatic Affairs",
-		"Emergency Management Bureau",
-		"Secure Routing Service"
+		"Segmentum Command",
+		"Mechanicus - Explorator Fleet",
+		"Administratum - Holy Terra",
+		"Lord Militant General - Militarum",
+		"The Holy Ordos - Code Vermillion"
 	)
 
 	//These should probably be moved into the evac controller...
@@ -48,7 +42,7 @@
 
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
-	num_exoplanets = 1
+	num_exoplanets = 0
 
 	away_site_budget = 1
 	min_offmap_players = 0

@@ -12,7 +12,7 @@
 	throw_range = 5
 	w_class = ITEM_SIZE_NORMAL
 	var/charge			                // Current charge
-	var/maxcharge = 1000 // Capacity in Wh
+	var/maxcharge = 2000 // Capacity in Wh
 	var/overlay_state
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 50, MATERIAL_PLASTIC = 20)
 
@@ -132,7 +132,7 @@
 	force = 0
 	throw_speed = 5
 	throw_range = 7
-	maxcharge = 100
+	maxcharge = 300
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 5)
 
 /obj/item/cell/device/Initialize()
@@ -145,28 +145,43 @@
 	return ..(mapload)
 
 /obj/item/cell/device/standard
-	name = "standard device power cell"
-	maxcharge = 100
+	name = "standard power pack"
+	maxcharge = 300
 
 /obj/item/cell/device/high
-	name = "advanced device power cell"
-	desc = "A small power cell designed to power more energy-demanding devices."
+	name = "advanced power pack"
+	desc = "A small power pack designed to power more energy-demanding devices."
 	icon_state = "hdevice"
-	maxcharge = 200
+	maxcharge = 400
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 
 /obj/item/cell/device/high/laspack
 	name = "laspack"
-	desc = "A small power cell designed to power more energy-demanding devices."
+	desc = "Standard issue laspack for standard pattern las weapons."
 	icon_state = "hdevice"
-	maxcharge = 300
+	maxcharge = 550
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
+
+/obj/item/cell/device/high/laspack/hotshot
+	name = "hotshot laspack"
+	desc = "Standard issue hotshot laspack for more demanding las weapon patterns."
+	icon_state = "hdevice"
+	color = COLOR_GUNMETAL
+	maxcharge = 800
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
+
+/obj/item/cell/device/high/xenos
+	name = "xenos power pack"
+	desc = "A xenos power pack with incredible charge capacity."
+	icon_state = "hpcell"
+	maxcharge = 1200
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 
 /obj/item/cell/crap
 	name = "old power cell"
 	desc = "A cheap old power cell. It's probably been in use for quite some time now."
 	origin_tech = list(TECH_POWER = 0)
-	maxcharge = 100
+	maxcharge = 200
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 40, MATERIAL_PLASTIC = 20)
 
 /obj/item/cell/crap/empty

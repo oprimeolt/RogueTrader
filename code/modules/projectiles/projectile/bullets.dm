@@ -130,7 +130,7 @@
 
 /obj/item/projectile/bullet/pistol/holdout
 	damage = 40
-	penetration_modifier = 0.3
+	penetration_modifier = 0.5
 	distance_falloff = 4
 
 /obj/item/projectile/bullet/pistol/strong
@@ -201,7 +201,6 @@
 /obj/item/projectile/bullet/rifle
 	damage = 45
 	armor_penetration = 25
-	penetrating = 1
 	distance_falloff = 1
 
 /obj/item/projectile/bullet/rifle/military
@@ -220,7 +219,7 @@
 
 /obj/item/projectile/bullet/rifle/shell/apds
 	damage = 70
-	penetrating = 5
+	penetrating = 3
 	armor_penetration = 80
 	penetration_modifier = 1.2
 

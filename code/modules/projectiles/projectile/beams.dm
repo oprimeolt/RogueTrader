@@ -12,9 +12,10 @@
 	eyeblur = 4
 	hitscan = TRUE
 	invisibility = INVISIBILITY_ABSTRACT	//beam projectiles are invisible as they are rendered by the effect engine
-	penetration_modifier = 0.6
+	penetration_modifier = 0.3
 	distance_falloff = 1.5
 	damage_falloff = TRUE
+	var/mob_passthrough_checker = 0
 	damage_falloff_list = list(
 		list(3, 0.95),
 		list(5, 0.90),
@@ -24,6 +25,37 @@
 	muzzle_type = /obj/projectile/laser/muzzle
 	tracer_type = /obj/projectile/laser/tracer
 	impact_type = /obj/projectile/laser/impact
+
+/obj/item/projectile/beam/attack_mob(mob/living/target_mob, distance, miss_modifier)
+	if(penetrating > 0 && damage > 20 && prob(damage))
+		mob_passthrough_checker = 1
+	else
+		mob_passthrough_checker = 0
+	. = ..()
+
+	if(. == 1 && iscarbon(target_mob))
+		damage *= 0.7 //squishy mobs absorb Heat
+
+/obj/item/projectile/beam/check_penetrate(atom/A)
+	if(QDELETED(A) || !A.density) return 1 //if whatever it was got destroyed when we hit it, then I guess we can just keep going
+
+	if(ismob(A))
+		if(!mob_passthrough_checker)
+			return 0
+		return 1
+
+	var/chance = damage
+	if(has_extension(A, /datum/extension/penetration))
+		var/datum/extension/penetration/P = get_extension(A, /datum/extension/penetration)
+		chance = P.PenetrationProbability(chance, damage, damage_type)
+
+	if(prob(chance))
+		if(A.opacity)
+			//display a message so that people on the other side aren't so confused
+			A.visible_message(SPAN_WARNING("\The [src] pierces through \the [A]!"))
+		return 1
+
+	return 0
 
 /obj/item/projectile/beam/practice
 	fire_sound = 'sound/weapons/Taser.ogg'
@@ -52,8 +84,7 @@
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
 	damage = 44
-	armor_penetration = 20
-	penetration_modifier = 0.5
+	armor_penetration = 22
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -64,20 +95,88 @@
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun1.ogg'
 	damage = 35
-	armor_penetration = 29
-	penetration_modifier = 0.4
+	armor_penetration = 22
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
 		list(8, 0.92),
 	)
 
-/obj/item/projectile/beam/lasgun/overcharge
+/obj/item/projectile/beam/lasgun/overcharge // Overcharge rule is you add +10/20(Kantrael/Longlas) to charge cost in exchange for standard overcharge increase.
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
 	damage = 54
 	armor_penetration = 35
-	penetration_modifier = 0.7
+	penetration_modifier = 0.5
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun/lucius
+	icon_state = "laser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
+	damage = 48
+	armor_penetration = 30
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun/lucius/overcharge
+	icon_state = "laser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
+	damage = 60
+	armor_penetration = 33
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun/hotshot
+	icon_state = "heavylaser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
+	damage = 55
+	armor_penetration = 33
+	penetration_modifier = 0.5
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun/hotshot/overcharge
+	icon_state = "heavylaser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
+	damage = 65
+	armor_penetration = 35
+	penetration_modifier = 0.5
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+
+/obj/item/projectile/beam/lasgun/longlas
+	icon_state = "heavylaser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
+	damage = 75
+	armor_penetration = 35
+	penetration_modifier = 0.5
+	distance_falloff = 1
+	damage_falloff_list = list(
+		list(6, 0.98),
+		list(8, 0.92),
+	)
+/obj/item/projectile/beam/lasgun/longlas/overcharge
+	icon_state = "heavylaser"
+	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
+	damage = 90
+	armor_penetration = 40
+	penetration_modifier = 0.5
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -91,6 +190,7 @@
 	damage = 60
 	armor_penetration = 30
 	distance_falloff = 0.5
+	penetration_modifier = 0.5
 	damage_falloff_list = list(
 		list(6, 0.97),
 		list(9, 0.94),
@@ -107,7 +207,6 @@
 	fire_sound = 'sound/weapons/laser3.ogg'
 	damage = 30
 	armor_penetration = 30
-	penetration_modifier = 0.8
 	distance_falloff = 1.5
 	damage_falloff_list = list(
 		list(3, 0.95),
@@ -261,6 +360,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 35
+	penetration_modifier = 0.5
 	armor_penetration = 10
 	damage_falloff_list = null
 

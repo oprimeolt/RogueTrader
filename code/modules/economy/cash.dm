@@ -1,9 +1,9 @@
 /obj/item/spacecash
-	name = "0 thalers"
-	desc = "It's worth 0 thalers."
+	name = "0 Scrip"
+	desc = "It's worth 0 Scrip."
 	gender = PLURAL
 	icon = 'icons/obj/money.dmi'
-	icon_state = "spacecash1"
+	icon_state = "throne"
 	opacity = 0
 	density = FALSE
 	anchored = FALSE
@@ -52,9 +52,9 @@
 		return list(icon_state)
 
 /obj/item/spacecash/bundle
-	name = "pile of thalers"
-	icon_state = "spacecash1"
-	desc = "They are worth 0 Thalers."
+	name = "pile of Scrip"
+	icon_state = "throne1"
+	desc = "They are worth 0 Scrip."
 	worth = 0
 
 /obj/item/spacecash/bundle/Initialize()
@@ -72,7 +72,7 @@
 			sum -= i
 			num++
 			. += "spacecash[i]"
-	if(num == 0) // Less than one thaler, let's just make it look like 1 for ease
+	if(num == 0) // Less than one Scrip, let's just make it look like 1 for ease
 		. += "spacecash1"
 
 /obj/item/spacecash/bundle/on_update_icon()
@@ -117,51 +117,51 @@
 		..()
 
 /obj/item/spacecash/bundle/c1
-	name = "1 Thaler"
-	icon_state = "spacecash1"
-	desc = "It's worth 1 credit."
+	name = "1 Scrip"
+	icon_state = "throne1"
+	desc = "It's worth 1 Scrip."
 	worth = 1
 
 /obj/item/spacecash/bundle/c10
-	name = "10 Thaler"
-	icon_state = "spacecash10"
-	desc = "It's worth 10 Thalers."
+	name = "10 Scrip"
+	icon_state = "throne10"
+	desc = "It's worth 10 Scrip."
 	worth = 10
 
 /obj/item/spacecash/bundle/c20
-	name = "20 Thaler"
-	icon_state = "spacecash20"
-	desc = "It's worth 20 Thalers."
+	name = "20 Scrip"
+	icon_state = "throne20"
+	desc = "It's worth 20 Scrip."
 	worth = 20
 
 /obj/item/spacecash/bundle/c50
-	name = "50 Thaler"
-	icon_state = "spacecash50"
-	desc = "It's worth 50 Thalers."
+	name = "50 Scrip"
+	icon_state = "throne20"
+	desc = "It's worth 50 Scrip."
 	worth = 50
 
 /obj/item/spacecash/bundle/c100
-	name = "100 Thaler"
-	icon_state = "spacecash100"
-	desc = "It's worth 100 Thalers."
+	name = "100 Scrip"
+	icon_state = "spacecash20"
+	desc = "It's worth 100 Scrip."
 	worth = 100
 
 /obj/item/spacecash/bundle/c200
-	name = "200 Thaler"
-	icon_state = "spacecash200"
-	desc = "It's worth 200 Thalers."
+	name = "200 Scrip"
+	icon_state = "throne20"
+	desc = "It's worth 200 Scrip."
 	worth = 200
 
 /obj/item/spacecash/bundle/c500
-	name = "500 Thaler"
-	icon_state = "spacecash500"
-	desc = "It's worth 500 Thalers."
+	name = "500 Scrip"
+	icon_state = "throne20"
+	desc = "It's worth 500 Scrip."
 	worth = 500
 
 /obj/item/spacecash/bundle/c1000
-	name = "1000 Thaler"
-	icon_state = "spacecash1000"
-	desc = "It's worth 1000 Thalers."
+	name = "1000 Scrip"
+	icon_state = "throne20"
+	desc = "It's worth 1000 Scrip."
 	worth = 1000
 
 /proc/spawn_money(sum, spawnloc, mob/living/carbon/human/human_user as mob)
@@ -179,12 +179,12 @@
 	return
 
 /obj/item/spacecash/ewallet
-	name = "Charge card"
-	icon_state = "efundcard"
-	desc = "A card that holds an amount of money."
+	name = "Munitorum Dataslate"
+	icon_state = "munitorium_efundcard"
+	desc = "A dataslate that holds an amount of money."
 	var/owner_name = "" //So the ATM can set it so the EFTPOS can put a valid name on transactions.
 
 /obj/item/spacecash/ewallet/examine(mob/user, distance)
 	. = ..(user)
 	if (distance > 2 && user != loc) return
-	to_chat(user, SPAN_NOTICE("Charge card's owner: [src.owner_name]. [GLOB.using_map.local_currency_name] remaining: [src.worth]."))
+	to_chat(user, SPAN_NOTICE("Data Slate's owner: [src.owner_name]. [GLOB.using_map.local_currency_name] remaining: [src.worth]."))
