@@ -1,6 +1,6 @@
 /datum/map/torch
-	name = "\improper Torch"
-	full_name = "\improper SEV Torch"
+	name = "\improper Dauntless"
+	full_name = "\improper Dauntless"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	config_path = "config/torch_config.txt"
@@ -21,7 +21,7 @@
 	dock_name     = "TBD"
 	boss_name     = "Lord Trader"
 	boss_short    = "RT"
-	company_name  = "The Imperium"
+	company_name  = "Imperium Of Man"
 	company_short = "Imperium"
 
 	map_admin_faxes = list(

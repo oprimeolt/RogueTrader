@@ -546,16 +546,16 @@
 	impact_type = /obj/projectile/pointdefense/impact
 
 /obj/item/projectile/beam/incendiary_laser
-	name = "scattered laser blast"
+	name = "volkite laser blast"
 	icon_state = "beam_incen"
-	fire_sound='sound/weapons/scan.ogg'
-	damage = 12
+	fire_sound= 'sound/warhammer/gunshot/lasgun3.ogg'
+	damage = 60
 	agony = 8
 	eyeblur = 8
 	sharp = FALSE
 	damage_flags = 0
-	life_span = 8
-	armor_penetration = 10
+	life_span = 5
+	armor_penetration = 40
 	damage_falloff_list = list(
 		list(3, 0.95),
 		list(5, 0.90),

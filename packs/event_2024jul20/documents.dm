@@ -5,9 +5,9 @@
 <strong>PRECEDENCE: FLASH</strong>
 <h3>MARSCOM - HIGH COMMAND OFFICES</h3>
 <img src="fleetlogo.png"/></center>
-<p><tt><tt><strong>FROM:</strong> Rear Admiral Korubei Richter, Fifth Fleet<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Helios Project, Expeditionary Corps<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Rear Admiral Korubei Richter, Fifth Fleet<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Helios Project, Expeditionary Corps<br /></tt></tt></p>
 <hr />
-<p>Per incident and consequential orders, the SEV Torch has been ordered to return to sector <strong>S5</strong>, system <strong>E-14b</strong>, effective immediately.</p>
+<p>Per incident and consequential orders, the Dauntless has been ordered to return to sector <strong>S5</strong>, system <strong>E-14b</strong>, effective immediately.</p>
 <p>Fifth Fleet Quick Reaction Forces are currently mobilising and conducting hot jumps to secure the route as necessary, however, mass factor dilations and general distance will delay reinforcements.</p>
 <p>As such, while regular expeditionary and prospecting operations are not banned, present ship command personnel are asked to <strong>strongly enforce</strong> away team return times.</p>
 <p>Retrieval of personnel left behind will be impossible due to on-going Fleet activity in the area of operations. Vessels will be unavailable for frivolous use.</p>
@@ -33,13 +33,13 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Admiral William Henry Lau, Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Director Nazur Khalid, Solar Bureau of Public Information <br /><strong>SUBJECT:</strong> Non-Disclosure and Operational Security Notice<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Admiral William Henry Lau, Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Director Nazur Khalid, Solar Bureau of Public Information <br /><strong>SUBJECT:</strong> Non-Disclosure and Operational Security Notice<br /></tt></tt></p>
 <hr />
 <p>Good day, Torch.</p>
 <p>This is an important advisory for members of the command staff aboard the vessel. With the discovery of a new, potentially hostile body - it is of the utmost importance that information be disseminated in a controlled, and calculated manner.</p>
 <p>It is crucial to keep in mind that hysteria and fearmongering is still a valid concern for the masses of the Solar state. While this is not the first time that we have conducted first contact, contextually, this has been of the equivalance of first contacts with the Vox.</p>
 <p>As such, in an effort to maintain operational security, as well as ensure that non-Solar actors do not gain access to the information and experience that you have gathered - the Bureau of Public Information has imposed a ship-wide C-Notice on exchange of verbal information relating to this incident.</p>
-<p>We have authorised both independent, and government observers to board the Torch for information. All observers and/or journalists must have their identity and source of representation be verified by command or security.</p>
+<p>We have authorised both independent, and government observers to board The Dauntless for information. All observers and/or journalists must have their identity and source of representation be verified by command or security.</p>
 <p>Verification can be conducted via a fax to EXCOM, from a present Representative, or line officer, with the details of the individual involved, and their representative branch.</p>
 <p>Those representing branches of the Solar Government can be given full details as needed. However, for independent civilian journalists and contracted observers, the information must be regulated. The guidelines to follow for them, are:</p>
 <p>1. It may be disseminated that the encounter was hostile in nature.</p>
@@ -67,7 +67,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Carom Andella, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice of Care - Psychiatrics and Synthetics<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Carom Andella, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice of Care - Psychiatrics and Synthetics<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>This notice is for you to be aware of the repercussions of the situation that you, and your vessel has gone through.</p>
@@ -80,7 +80,7 @@
 <p>4. Train your crew to identify common symptoms of depression and anxiety. Conduct sensitivity trainings and readiness evaluations for your personnel.
 <p>With the potential involvement and compromise of synthetics, both human and non-human. It is essential that you correllate and co-operate with the Chief Engineer and roboticists of your vessel. Psychiatric evaluations of positronics are hence, <strong>mandatory</strong>.</p>
 <p>Evaluations are to be forwarded to the Observatory for processing and review whenever possible.</p>
-<p>In case of any queries or issues. Long range FTL communication bandwidth has been expanded for use by the Torch. Ensure no illness remains untreated.</p>
+<p>In case of any queries or issues. Long range FTL communication bandwidth has been expanded for use by The Dauntless. Ensure no illness remains untreated.</p>
 <hr />
 <p>&nbsp;<em>This paper has been stamped with the insignia of the SCGEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
@@ -101,10 +101,10 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Liam Henshell, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General Reminder - Security Guidelines<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Liam Henshell, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General Reminder - Security Guidelines<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
-<p>With your retreat from the affected sectors, and subsequent incidents that required to be handled. A few pointers are henceforth embolded in order to help you maintain authority aboard the SEV Torch.</p>
+<p>With your retreat from the affected sectors, and subsequent incidents that required to be handled. A few pointers are henceforth embolded in order to help you maintain authority aboard the Dauntless.</p>
 <p>1. Ensure to keep a check on increased rates of espionage attempts. With the muted state of the event, various non-Solar aligned actors will be looking to capitalise on this tragedy.</p>
 <p>2. Ensure to keep a check on increased rates of sedition. Unrest and discontent amongst crew is common, especially after potentially catastrophic events of unknown origins. While the use of force is to be maintained and remains unchanged - attempt to be firm, but understanding.</p>
 <p>3. Ensure to keep a check on your subordinates. The security crew is essential to the operations of the vessel. Fleet quick reaction forces will be on stand-by in case extra equipment is required.</p>
@@ -133,7 +133,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Minnie Rosulia, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Emergency Orders - Electronic Warfare<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Minnie Rosulia, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Emergency Orders - Electronic Warfare<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>After scrutiny of available information, it has been determined that there is a major security risk of on-board ship systems. Reported compromises of electronic suites, and IT infrastructure is a serious matter.</p>
@@ -165,7 +165,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Lieutenant Vasco Espueza, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> First Contact and Anomalies<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Lieutenant Vasco Espueza, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> First Contact and Anomalies<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>With the emergent need for a stronger solution to synthetic threats. It is <strong>authorised</strong> and <strong>highly encouraged</strong> to retain, study and utilise any anomalies exhibiting ionic properties.</p>
@@ -197,7 +197,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Vera Soo-Hyun, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General guidelines on Emergency Logistics<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Vera Soo-Hyun, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General guidelines on Emergency Logistics<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>This is with strong recommendation to follow appropriate validity and verification procedures when receiving and sending equipment and cargo.</p>
@@ -228,7 +228,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Lieutenant Sam Nerehel, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice - Crisis and Serenity<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Lieutenant Sam Nerehel, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice - Crisis and Serenity<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>We are gravely disconcerted with your current situation. Operating a vessel's service crew under times of duress such as these can be challenging.</p>
@@ -257,7 +257,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY CORPS ORGANISATION</h3>
 <img src="exologo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Executive Dima Gorzarev, EXO Head Office<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>SUBJECT:</strong> Notice of Corporate Assets<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Executive Dima Gorzarev, EXO Head Office<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>SUBJECT:</strong> Notice of Corporate Assets<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>We are currently aware of the situation surrounding your post. Considering the consequential events that are predicted to unfold, a few precautionary measures have been taken for your safety.</p>
@@ -288,10 +288,10 @@
 	info = {"\
 <center><h3>SOL CENTRAL GOVERNMENT</h3>
 <img src="sollogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, SEV Torch<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
-<p>Regarding the latest incident surrounding the SEV Torch. It is prudent that we tread extremely carefully.</p>
+<p>Regarding the latest incident surrounding the Dauntless. It is prudent that we tread extremely carefully.</p>
 <p>With the potential of yet another hostile first contact, especially with synthetic assimilators capable of electronic warfare puts a majority of our services and systems at risk.</p>
 <p>It also puts forth the dreadful question of hostilities outside of our scope of perception, including those that affected the Terran Commonwealth that came before us.</p>
 <p>It is immensely prudent for your vessels to stay tightly run. While we are at a heightened alert, we do not wish to create distrust, and unrest in the greater part of the state. Considering current circumstances politically.</p>

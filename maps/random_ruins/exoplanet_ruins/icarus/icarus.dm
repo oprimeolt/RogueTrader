@@ -86,7 +86,7 @@
 
 /obj/item/icarus_disk
 	name = "disk"
-	desc = "A dusty disk. Its label says: \"Deliver to SCG Expeditionary Corps Command!\". Its content is encrypted with quantum cryptography methods."
+	desc = "A dusty disk. Its label says: \"Deliver to Imperium Expeditionary Corps Command!\". Its content is encrypted with quantum cryptography methods."
 	icon = 'icons/obj/datadisks.dmi'
 	icon_state = "nucleardisk"
 	item_state = "card-id"
@@ -100,9 +100,9 @@
 
 /obj/item/gun/projectile/pistol/m22f/icarus
 	name = "rusty military pistol"
-	desc = "A Hephaestus Industries M22F. A large pistol issued as an SCGDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
+	desc = "A Hephaestus Industries M22F. A large pistol issued as an ImperiumDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
 
-//SCG deco
+//Imperium deco
 
 /obj/structure/sign/icarus_dedicationplaque
 	name = "\improper SEV Icarus dedication plaque"
@@ -117,7 +117,7 @@
 
 /obj/structure/sign/double/icarus_solgovflag
 	name = "Sol Central Government Flag"
-	desc = "A faded SCG flag. It appears to have been radiation bleached."
+	desc = "A faded Imperium flag. It appears to have been radiation bleached."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 
 /obj/structure/sign/double/icarus_solgovflag/left
@@ -127,7 +127,7 @@
 	icon_state = "solgovflag-right"
 
 /obj/structure/sign/icarus_solgov
-	name = "\improper Faded SCG seal"
+	name = "\improper Faded Imperium seal"
 	desc = "A sign which signifies who this vessel belongs to. This one is faded."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 	icon_state = "solgovseal"

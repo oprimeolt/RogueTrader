@@ -31,7 +31,7 @@
 	to_chat(user, info || SPAN_WARNING("[src] is completely blank!"))
 
 /obj/item/passport/scg
-	name = "\improper SCG passport"
+	name = "\improper Imperial passport"
 	icon_state = "passport_scg"
 	desc = "A passport from the Sol Central Government."
 
