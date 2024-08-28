@@ -186,7 +186,7 @@
 
 /obj/item/gun/projectile/sniper/semistrip
 	name = "carbine rifle"
-	desc = "An old semi-automatic carbine chambered in large pistol rounds, this thing looks older than the SCG."
+	desc = "An old semi-automatic carbine chambered in large pistol rounds, this thing looks older than the Imperium."
 	icon = 'icons/obj/guns/semistrip.dmi'
 	icon_state = "semistrip"
 	item_state = "semistrip"

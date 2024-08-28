@@ -1,6 +1,6 @@
 /singleton/cultural_info/location/human
 	name = HOME_SYSTEM_MARS
-	description = "Mars, the current capital of the SCG, known by its nickname the Red Planet, is one of the most populous centres of Humanity. \
+	description = "Mars, the current capital of the Imperium, known by its nickname the Red Planet, is one of the most populous centres of Humanity. \
 	Since the founding of the first colony by Jimmy Gideon many years ago Mars has been an important player on the Human stage. Terraforming on \
 	Mars was only partially successful, and today much of the population lives either in huge domed cities/agri-zones or within a vast underground \
 	tunnel network connecting large underground cities. Often seen as the primary divide on the planet, the rich surfaces versus the poor \
@@ -54,7 +54,7 @@
 	much of the population of Venus resides. Venus itself is covered in huge platforms, supporting these cloud cities and numerous \
 	agricultural zones, which quickly earned Venus the reputation of 'sol's breadbasket.' Today Venus is the home of some of the more \
 	extravagantly wealthy with the entire planet being a dedicated tourist destination, most of its infrastructure and residential zones are \
-	dedicated to providing entertainment, hotels, casinos and various other attractions. Venus is one of the richest planets in the SCG and \
+	dedicated to providing entertainment, hotels, casinos and various other attractions. Venus is one of the richest planets in the Imperium and \
 	most of its residents enjoy a decadent, elitist lifestyle.<br><br>Many of the people of Venus come in two categories. The rich, the retirees, \
 	the more public corporate workers, who reside high in the clouds. These people often enjoy an extravagant and somewhat decadent lifestyle. \
 	Apart from those rich enough to live there permanently most of the people of Venus are service workers, living there only for the duration \
@@ -68,10 +68,10 @@
 	distance = "2.7AU"
 	description = "Ceres station, officially the Ceres Mining and Habitation Outpost is historically a significant mining facility for humanity. However \
 	this importance has diminished greatly in the past few decades and today Ceres is a sprawling, populous facility covering much of its namesake. \
-	Operated primarily by Falco Designs, one of the SCG's premier shipbuilding corporations, Ceres is home to a multitude of drydocks and service centres \
+	Operated primarily by Falco Designs, one of the Imperium's premier shipbuilding corporations, Ceres is home to a multitude of drydocks and service centres \
 	for vessels. Ceres is a melting pot and is the primary stopping point for vessels entering the Sol system. It is often said anything worth anything \
 	passes through Ceres, giving it a reputation for having a diverse black market. Commonly called 'Belters' the people of Ceres are today are mostly \
-	employed in shipbuilding, manufacturing, vessel services and hospitality. Belters generally regard themselves as adaptive, proud members of the SCG \
+	employed in shipbuilding, manufacturing, vessel services and hospitality. Belters generally regard themselves as adaptive, proud members of the Imperium \
 	and some of the best engineers Humanity has to offer."
 	capital = "Government Zone, Ceres Station"
 
@@ -113,10 +113,10 @@
 	name = HOME_SYSTEM_HELIOS
 	description = "Eos, in the Helios system, is itself a small, hot, dense world. The world itself is of only marginal importance, though it supports a densely packed city, Surya, \
 	which has become known for its banking services. Of more import is the system itself, Helios, and what orbits Eos: The Helios Gateway Installation. The HGI is the largest \
-	gateway installation in SCG space and provides vital links to many other SCG systems. Practically a city in space unto itself, the HGI is home to a hodgepodge of private individuals, \
+	gateway installation in Imperium space and provides vital links to many other Imperium systems. Practically a city in space unto itself, the HGI is home to a hodgepodge of private individuals, \
 	Fleet and law enforcement outposts, government services and a wide array of private enterprises all catering to the many hangabouts, travellers, merchants and soldiers who pass through it daily. \
 	This fact alone is what has allowed the Helios system and Eos as a whole to weather multiple economic recessions and has allowed Eos to establish itself as a premier commercial centre of the wider \
-	SCG. This process was hindered during the Gaia conflict, when the Helios Gateway was destroyed in a suicide action of the Fourth Fleet to stop the GCC advance. It has recovered rapidly \
+	Imperium. This process was hindered during the Gaia conflict, when the Helios Gateway was destroyed in a suicide action of the Fourth Fleet to stop the GCC advance. It has recovered rapidly \
 	since the occupation, though the memories of that event carry in the collective consciousness of those who remained through it."
 	capital = "Surya"
 	economic_power = 1.3
@@ -126,9 +126,9 @@
 	name = HOME_SYSTEM_TERRA
 	description = "Terra, in the Gilgamesh system. Is not the planet Earth as some may be lead to believe. No, Terra is the home of the Gilgamesh Colonial Confederation, and the capital of that \
 	particular superpower. Terra is one of the many affiliated planets in the GCC and the one that is perhaps the most important. Terra, much like most of the GCC, is isolationist, with a minimal \
-	non-human presence. Much of Terra is heavily industrialised, with a lower standard of living than on equivalent SCG planets. Much of the population works in services, industry or the military. \
+	non-human presence. Much of Terra is heavily industrialised, with a lower standard of living than on equivalent Imperium planets. Much of the population works in services, industry or the military. \
 	Still recovering from an economic crash toward the end of the Gaia conflict, much of Terra is in decline, with public services and works being minimal and much of the population burdened by \
-	increasingly high taxes. This state of affairs has seen the immigration of many Terran citizens to the SCG in recent years, hoping to escape the poor conditions they found themselves in. Despite this,\
+	increasingly high taxes. This state of affairs has seen the immigration of many Terran citizens to the Imperium in recent years, hoping to escape the poor conditions they found themselves in. Despite this,\
 	the people of Terra are a proud and unbroken people who are heavily patriotic and tend to bring this with them wherever they go."
 	capital = "Ameranth"
 	distance = "22.5 light years."
@@ -143,7 +143,7 @@
 	However, because of the system's proximity to several other colonies and Saffar's atmospheric composition, a gas mining and refueling station was constructed in high orbit c. 2198. \
 	Over time, the station expanded to accommodate higher traffic and an ever-growing number of permanent residents, culminating in the construction of a gateway in-system  \
 	shortly after the war between the Terran Commonwealth and the Ares Confederation ended c. 2230. Since the construction of the gateway, Saffar is nominally under the  \
-	jurisdiction of the SCG's Gateway Administration, although Saffarite efforts to be considered a member state have been underway since the SCG was first formed."
+	jurisdiction of the Imperium's Gateway Administration, although Saffarite efforts to be considered a member state have been underway since the Imperium was first formed."
 	capital = "Saffar Station"
 	economic_power = 1.2
 
@@ -163,7 +163,7 @@
 	description = "Pirx Prime is a colonized super-earth located in the Pirx system. Covered in a jungle of towering, exotic plantlife, Pirx is closer to unexplored \
 	space than it is to most other colonies. Pirx has suffered from this disconnect, with few corporate investors and fewer immigrants. As such, most of the planet remains \
 	unexplored. With the recent resurgence of the Expeditionary Corps, Pirx has found itself rapidly thrust into a position as both a sort of supply and fuel stop for EC vessels \
-	and a training ground for prospective explorers. The long-term neglect and then sudden exploitation has fostered a bitter attitude towards the SCG and the EC in many Pirxans."
+	and a training ground for prospective explorers. The long-term neglect and then sudden exploitation has fostered a bitter attitude towards the Imperium and the EC in many Pirxans."
 	capital = "Yuodu"
 	economic_power = 0.7
 
@@ -171,7 +171,7 @@
 	name = HOME_SYSTEM_BRAHE
 	distance = "41 light years"
 	description = "Brahe is an ocean planet in the Copernicus system. First colonized alongside Iolaus by sleeper ships c. 2132, contact was temporarily lost during the war between the Terran Commonwealth \
-	and the Ares Confederation. Since contact was reestablished during the formation of the Sol Central Government, Brahe has been a strong supporter of the SCG and an advocate for further expansion into \
+	and the Ares Confederation. Since contact was reestablished during the formation of the Sol Central Government, Brahe has been a strong supporter of the Imperium and an advocate for further expansion into \
 	unexplored space. With only 12% of the planet's surface being usable landmass, Brahe's economy is mostly founded on the tourism that the extensive coasts attract, and research done \
 	in surface and underwater labs. The Zeng-Hu corporation in particular has strong ties to Brahe's genetic research labs, and many Brahese government officials hold positions within the company."
 	capital = "New Aarhus"
@@ -183,14 +183,14 @@
 	description = "Iolaus is a super-earth in the Copernicus system. First colonized alongside Brahe by sleeper ships c. 2132, contact was temporarily lost during the war between the Terran Commonwealth \
 	and the Ares Confederation. During this period of time, Iolaus kept the two fledgling colonies alive, producing enough food and supplies for the two planets to scrape by. Since contact was reestablished \
 	during the formation of the Sol Central Government, Iolaus has taken efforts to retain some independence while taking advantage of the reintroduction of trade to the system. As a result, Iolaus imports \
-	tend to be restricted to only what they cannot produce themselves, while Iolan exports are shipped across the entirety of SCG space."
+	tend to be restricted to only what they cannot produce themselves, while Iolan exports are shipped across the entirety of Imperium space."
 	capital = "Nemea"
 	economic_power = 1.0
 
 /singleton/cultural_info/location/human/gaia
 	name = HOME_SYSTEM_GAIA
 	distance = "14 light years"
-	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the SCG and the GCC. \
+	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the Imperium and the GCC. \
 	It is an agricultural world, though the recent Gaia Conflict has left the planet's surface scarred. The planet is divided into the \
 	Sol-Controlled <b>Gaian Administrative Area</b> and Independent-Backed <b>Protectorate of Gaia</b>, with the International City of New Venice remaining a neutral zone inside the DMZ. \
 	The planet's population remain divided even 10 years after the Gaian Conflict. While Gaia is divided the current Mayor of New Venice serves as a vital mediator between both sides. \

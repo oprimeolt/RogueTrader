@@ -242,7 +242,7 @@
 		return "E[sort_order]"
 	return "O[sort_order - 10]"
 
-// Within the scope of the Torch, this is the only necessary differentiation.
+// Within the scope of The Dauntless, this is the only necessary differentiation.
 /datum/mil_rank/rank_category()
 	. = ..()
 	if(!sort_order)

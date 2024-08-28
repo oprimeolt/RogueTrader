@@ -1,5 +1,5 @@
 /obj/structure/sign/dedicationplaque
-	name = "\improper SEV Torch dedication plaque"
+	name = "\improper Dauntless dedication plaque"
 	icon_state = "lightplaque"
 
 /obj/structure/sign/dedicationplaque/Initialize()

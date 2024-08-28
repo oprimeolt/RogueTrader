@@ -50,7 +50,7 @@
 
 /mob/living/simple_animal/hostile/rogue_drone/hijacked
 	name = "hijacked drone"
-	desc = "A small, junky-looking robot. It looks angry. The design is similar to those utilised on SCG vessels."
+	desc = "A small, junky-looking robot. It looks angry. The design is similar to those utilised on Imperium vessels."
 	icon_state = "hivedrone"
 	icon_dead = "hivedrone_dead"
 	faction = "hivebot"

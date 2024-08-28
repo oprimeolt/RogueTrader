@@ -41,4 +41,4 @@
 	var/alert_desc = ""
 	if(SL.up_description)
 		alert_desc = SL.up_description
-	to_chat(src, SPAN_NOTICE("The alert level on the [station_name()] is currently: [SPAN_COLOR(SL.light_color_alarm, "<B>[SL.name]</B>")]. [alert_desc]"))
+	to_chat(src, SPAN_NOTICE("The alert level on the Dauntless is currently: [SPAN_COLOR(SL.light_color_alarm, "<B>[SL.name]</B>")]. [alert_desc]"))

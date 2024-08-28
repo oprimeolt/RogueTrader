@@ -630,7 +630,7 @@ Ccomp's first proc.
 		if("Yes")
 			command_announcement.Announce(input, customname, new_sound = GLOB.using_map.command_report_sound, msg_sanitized = 1);
 		if("No")
-			minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
+			minor_announcement.Announce(message = "New Update available at all communication consoles.")
 
 	log_admin("[key_name(src)] has created a command report: [input]")
 	message_admins("[key_name_admin(src)] has created a command report", 1)

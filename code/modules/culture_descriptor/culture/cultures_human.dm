@@ -45,7 +45,7 @@
 /singleton/cultural_info/culture/human/luna_rich
 	name = CULTURE_HUMAN_LUNARICH
 	description = "You are from Luna, Earths only natural satellite and home to some of the richest, most highly cultured, or influential people of humanity. Fortunately for you, you are one of this elite and well \
-	off class of people. The rich of Luna are politically and economically influential not just in Luna, but in the various corporations, organizations and government bodies of the SCG. \
+	off class of people. The rich of Luna are politically and economically influential not just in Luna, but in the various corporations, organizations and government bodies of the Imperial. \
 	Luna's upper class isn't equal; generally divided between new, corporate money and old, dynastic money; many members of the old dynasties look down on the newly wealthy. \
 	Much of the elite of Luna is embroiled in 'The Game' a state of political manoeuvring and intrigue among various factions and persons of influence and power \
 	with implications far beyond the squabbles of the prefectures."
@@ -55,7 +55,7 @@
 /singleton/cultural_info/culture/human/venusian_upper
 	name = CULTURE_HUMAN_VENUSIAN
 	description = "You are from one of the many zones of Venus. Floating high above the ground of the planet on massive platforms, you are one of the many who live on one of the most decadent locations in the \
-	SCG. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
+	Imperial. As a Venusian, you know luxury, wealth and entertainment. Primarily a tourist destination, many of the permanent residents work in the tourism industry and are notably middle-income. \
 	Those above are exceptionally wealthy, being hotel, casino, resort owners, politicians, bankers or rich retirees."
 	economic_power = 1.4
 
@@ -154,7 +154,7 @@
 
 /singleton/cultural_info/culture/human/tadmor
 	name = CULTURE_HUMAN_TADMOR
-	description = "Tadmor is one of the SCG's more successful colonial projects, and it's culture is rich and dignified as a result. \
+	description = "Tadmor is one of the Imperial's more successful colonial projects, and it's culture is rich and dignified as a result. \
 	Mostly living in the fissures of the desert world, Tadmorians are most famous for their cultural Pacifism, with their aversion to participation in \
 	the Gaia Conflict being seen by all residents as either a proud moment or a stain in the planets rich, Mars-Rooted history. "
 	economic_power = 1.2

@@ -854,12 +854,12 @@
 
 /datum/reagent/drink/gingerbeer
 	name = "Ginger Beer"
-	description = "A hearty, non-alcoholic beverage extremely popular around the SCG."
+	description = "A hearty, non-alcoholic beverage extremely popular around the Imperium."
 	taste_description = "carbonated ginger"
 	color = "#f5f3c6"
 
 	glass_name = "ginger beer"
-	glass_desc = "A hearty, non-alcoholic beverage extremely popular around the SCG."
+	glass_desc = "A hearty, non-alcoholic beverage extremely popular around the Imperium."
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/beastenergy

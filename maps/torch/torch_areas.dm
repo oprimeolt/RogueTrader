@@ -717,7 +717,7 @@
 
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
-	name = "\improper Command - SCGR's Office"
+	name = "\improper Command - ImperiumR's Office"
 	req_access = list(access_representative)
 	lighting_tone = AREA_LIGHTING_WARM
 
@@ -1301,7 +1301,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SEV Torch Bridge"
+	name = "\improper Dauntless Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 	holomap_color = HOLOMAP_AREACOLOR_COMMAND
