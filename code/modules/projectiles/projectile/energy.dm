@@ -225,3 +225,58 @@
 	damage = 10
 	armor_penetration = 35
 	damage_type = DAMAGE_BRUTE
+
+// 40k energy projectiles
+/obj/item/projectile/energy/ion
+	name = "ION round"
+	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
+	icon_state = "pulse1"
+	damage = 100
+	armor_penetration = 41
+
+/obj/item/projectile/energy/ion/plasma
+	name = "Plasma round"
+	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
+	icon_state = "pulse1"
+	damage = 100
+	armor_penetration = 41
+
+/obj/item/projectile/bullet/heavyplasma
+	name = "heavy plasma pulse"
+	icon_state = "pulse1"
+	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
+	armor_penetration = 41
+	damage = 28
+	agony = 40
+	damage_type = DAMAGE_BURN
+
+/obj/item/projectile/bullet/pellet/plasma
+	name = "heavy plasma pulse"
+	icon_state = "pulse1"
+	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
+	armor_penetration = 31
+	damage = 9
+	agony = 5
+	damage_type = DAMAGE_BURN
+	range_step = 1
+
+/obj/item/projectile/bullet/heavyplasma/on_hit(atom/target)
+	// Trigger the explosion effect
+	explosion(src.loc, 3, EX_ACT_LIGHT)
+	..()
+
+
+
+/obj/item/projectile/energy/pulsepistol
+	name = "pulse round"
+	fire_sound='sound/warhammer/gunshot/lasgun2.ogg'
+	icon_state = "pulse1"
+	damage = 60
+	armor_penetration = 35
+
+/obj/item/projectile/energy/pulserifle
+	name = "pulse round"
+	fire_sound='sound/warhammer/gunshot/lasgun2.ogg'
+	icon_state = "pulse1"
+	damage = 60
+	armor_penetration = 35
