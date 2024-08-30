@@ -92,7 +92,6 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	desc = "You can feel some kind of evil presence behind that door, is it really wise to open it ?" // Giving them a warning, before they die possibly
 	icon = 'icons/obj/doors/command_door.dmi'
 
-	maxhealth = 1500 // No funny shooting ideas
 	secured_wires = 1 // Find the key to open it, dumbass
 
 /obj/machinery/door/airlock/ancient_ship/command/capitan
@@ -101,7 +100,6 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	desc = "The whispers and noises are more and more loud behind it."
 	icon = 'icons/obj/doors/command_door.dmi'
 
-	maxhealth = 5000 // No skipping the dungeon
 	secured_wires = 1 // Not letting you just hack it and open it, dumbass.
 
 // 'Decoration'
@@ -168,7 +166,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	icon_state = "ws22"
 	desc = "<span class='danger'>The more you look at it, the more whispers and voices you hear on your head.</span>"
 
-// Mobs
+/*
 
 /mob/living/simple_animal/hostile/cpt_miller // Boss of the 'dungeon', slow but heavy hitter & high HP, you'll need a party for this or cheese it, had an arm removal code (ripping arms off players when in crit) & weapon blocking chance, but it's possibly gonna be nerfed or such (unrobust peep), so might aswell just make it a simple mob of sorts.
 	name = "Unholy Angel"
@@ -186,15 +184,8 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	melee_damage_upper = 60
 	attacktext = "cuts"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
-
+*/
 // Dungeon armors & Loot - Most of this will be loot and equipment you can obtain from the dungeon basically, these come from lifeweb
-
-/obj/item/card/id/key/super/capitan_quarters // To open the capitan's quarters,
-	name = "???"
-	desc = "It appears to be some sort of key..it does not stop pulsating though."
-	icon = 'icons/map_project/fluff_items.dmi'
-	icon_state = "crystal"
-	access = list(access_daemon)
 
 /obj/item/reagent_containers/glass/bottle/panacea
 	name = "Liquid Panacea"
@@ -228,7 +219,6 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	armor = list(melee = 5, bullet = 40, laser = 40, energy = 30, bomb = 40, bio = 90, rad = 90) // For skirmish combat, player is fast and can endure shots, but at CQC he's fucked, hit and run is more fitting for the armor user.
 	sales_price = 0 // Only 1 in the map
-	weight = 10
 
 /obj/item/clothing/head/leper
 	name = "leper's helmet"
@@ -252,7 +242,6 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	armor = list(melee = 10, bullet = 46, laser = 46, energy = 30, bomb = 40, bio = 90, rad = 90)
 	sales_price = 0 // Only 1 in the map
-	weight = 10
 
 /obj/item/clothing/head/cerb
 	name = "cerberus helmet"

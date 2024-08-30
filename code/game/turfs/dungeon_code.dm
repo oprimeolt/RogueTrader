@@ -2,9 +2,6 @@
 
 /*
 
-This file contains most of the code for the dungeons to work, structures, some items and mobs possibly - Graf
-
-*/
 
 /obj/structure/hivedecor/xenos
 	name = "xenos debris"
@@ -27,7 +24,7 @@ This file contains most of the code for the dungeons to work, structures, some i
 	icon_state = "vancrate"
 	icon_opened = "vancrateopen"
 	icon_closed = "vancrate"
-
+*/
 /obj/structure/hivedecor/vehicle/tau
 	name = "Destroyed Tau APC"
 	desc = "A destroyed armored personnel carrier of Tau origin."
@@ -259,6 +256,7 @@ This file contains most of the code for the dungeons to work, structures, some i
 	density = 0
 
 // Racks, crates and tables
+/*
 /obj/structure/table/rack/xenos
 	name = "strange rack"
 	desc ="An organic xenos resin seemss to be growing from the metal."
@@ -320,13 +318,14 @@ This file contains most of the code for the dungeons to work, structures, some i
 	icon_closed = "floorsafe"
 	anchored = 1
 	density = 0
+*/
 
 // NECRON TOMB - An old mechanicus outpost that was manned by penal units and mechanicus priest studying a tomb, they've been out of contact for several months
 
 /turf/unsimulated/floor/necron_floor
 	icon = 'icons/map_project/tombs.dmi'
 	icon_state = "floor"
-
+/*
 /mob/living/simple_animal/hostile/necron
 	name = "Necron Warrior"
 	desc = "A souless automaton who's only wish is to see you dead now."
@@ -359,10 +358,10 @@ This file contains most of the code for the dungeons to work, structures, some i
 	rapid = 0
 	projectilesound = 'sound/effects/meteorimpact.ogg'
 	projectiletype = /obj/item/projectile/necrongauss
-
+*/
 
 // I had to make a new projectile since the gauss one instantly kills players so here it is.
-
+/*
 /obj/item/projectile/necrongauss
 	name = "Gauss"
 	icon_state = "emitter"
@@ -374,13 +373,12 @@ This file contains most of the code for the dungeons to work, structures, some i
 	animate_movement = 1
 	penetrating = 55
 	armor_penetration = 40 // 85 percent pen vs astartes chest
-
+*/
 /obj/machinery/door/unpowered/necron_door1
 	icon = 'icons/obj/doors/necron_door.dmi'
 	name = "necron door"
 	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
 	icon_state = "door1"
-	maxhealth = 8000 // Suffer
 	opacity = 0
 	req_access = list(access_necron1)
 
@@ -390,7 +388,6 @@ This file contains most of the code for the dungeons to work, structures, some i
 	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
 	color = "blue"
 	icon_state = "door1"
-	maxhealth = 8000 // Suffer
 	opacity = 0
 	req_access = list(access_necron2)
 
@@ -400,7 +397,6 @@ This file contains most of the code for the dungeons to work, structures, some i
 	color = "red"
 	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
 	icon_state = "door1"
-	maxhealth = 8000 // Suffer
 	opacity = 0
 	req_access = list(access_necron3)
 
@@ -567,7 +563,7 @@ This file contains most of the code for the dungeons to work, structures, some i
 /turf/unsimulated/wall/valk_wall
 	icon = 'icons/map_project/valkyrie.dmi'
 	icon_state = "1"
-
+/*
 /mob/living/simple_animal/hostile/syndicate/mercenary
 	name = "Mercenary"
 	real_name = "Grey Lance Mercenary Soldier"
@@ -653,40 +649,6 @@ This file contains most of the code for the dungeons to work, structures, some i
 	projectilesound = 'sound/weapons/gunshot/auto5.ogg'
 	projectiletype = /obj/item/projectile/bullet/pistol/strong/revolver/ap
 
-/obj/item/clothing/suit/armor/aascout/br
-	name = "Blood Raven Scout's Carapace"
-	desc = "The sturdy armour, issued to Adeptus Astartes Scouts for their service until they prove themselves worthy to become full-fledged Battlebrothers."
-	icon_state = "fharmor"
-	item_state = "fharmor"
-	color = "red"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 12, bullet = 55, laser = 60, energy = 30, bomb = 40, bio = 10, rad = 10)
-	sales_price = 30
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	species_restricted = list(SPECIES_SCOUT)
-
-/decl/hierarchy/outfit/brscout
-	name = OUTFIT_JOB_NAME("Blood Raven Scout")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/aascout/br
-	head = null
-	id_type = null
-	pda_type = null
-	pda_slot = null
-	back = null
-	shoes = /obj/item/clothing/shoes/combat
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = null
-	r_ear = null
-
-/obj/effect/landmark/corpse/brscout
-	name = "Dead Blood Raven Scout"
-	species = list(SPECIES_SCOUT)
-	corpse_outfits = list(/decl/hierarchy/outfit/brscout)
-
-// Evil Sentinel
-
 /mob/living/simple_animal/hostile/syndicate/ranged/sentinel
 	name = "Heretical Sentinel"
 	desc = "A sentinel that was once used in the Imperial guard's arsenal, this one has been painted in red and the pilot hates the Emperor."
@@ -704,12 +666,6 @@ This file contains most of the code for the dungeons to work, structures, some i
 	projectilesound = 'sound/weapons/lasgun.ogg'
 	projectiletype = /obj/item/projectile/beam
 
-/*
-
-Civilians, Wounded, and other non combat personnel will be placed here, MOBs's with very little HP that if brought to a landmark (which i gotta ask
-rav to help me code) will reward the player with thrones, aka escort mission with reward - Graf
-
-*/
 
 /mob/living/simple_animal/civilians
 	name = "Civilian"
@@ -809,12 +765,6 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 	minbodytemp = 0
 
 
-
-
-/*
-
-All of the content below has been scrapped or going to be unused for a few reasons (not being 'fitting', outright unecessary and tests aswell on
-some stuff - Graf
 
 /mob/living/simple_animal/hostile/syndicate/guard
 	name = "Kriegsman" // Like the Traitor guard basically.
