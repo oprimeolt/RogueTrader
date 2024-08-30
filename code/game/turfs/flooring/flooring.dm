@@ -151,7 +151,6 @@
 	desc = "It's like the 2090's all over again."
 	icon = 'icons/turf/flooring/linoleum.dmi'
 	icon_base = "lino"
-	can_paint = 1
 	build_type = /obj/item/stack/tile/linoleum
 	flags = TURF_REMOVE_SCREWDRIVER
 	footstep_type = /singleton/footsteps/tiles
@@ -166,7 +165,6 @@
 	damage_temperature = T0C+1400
 	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN
 	build_type = /obj/item/stack/tile/floor
-	can_paint = 1
 	footstep_type = /singleton/footsteps/tiles
 
 /singleton/flooring/tiling/mono
@@ -298,7 +296,6 @@
 	build_time = 30
 	apply_thermal_conductivity = 0.025
 	apply_heat_capacity = 325000
-	can_paint = 1
 	footstep_type = /singleton/footsteps/plating
 
 /singleton/flooring/reinforced/circuit
@@ -307,7 +304,6 @@
 	icon_base = "bcircuit"
 	build_type = null
 	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
-	can_paint = 1
 	can_engrave = FALSE
 
 /singleton/flooring/reinforced/circuit/green
@@ -339,7 +335,6 @@
 	icon = 'icons/turf/shuttle.dmi'
 	build_type = null
 	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_CROWBAR
-	can_paint = 1
 	can_engrave = FALSE
 
 /singleton/flooring/reinforced/shuttle/blue
@@ -426,3 +421,201 @@
 	floor_smooth = SMOOTH_NONE
 	wall_smooth = SMOOTH_NONE
 	space_smooth = SMOOTH_NONE
+
+
+
+// WARHAMMER 40k
+
+/singleton/flooring/tiling
+	name = "floor"
+	desc = "Scuffed from the passage of countless menials."
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_base = "steel"
+	color = null
+	has_base_range = 3
+	damage_temperature = T0C+1400
+
+/singleton/flooring/tiling/stone
+	icon_base = "stone"
+
+
+/singleton/flooring/tiling/mono
+	icon_base = "monotile"
+
+/singleton/flooring/tiling/white
+	desc = "How sterile."
+	icon_base = "white"
+	color = null
+	build_type = /obj/item/stack/tile/floor_white
+
+/singleton/flooring/tiling/white/mono
+	icon_base = "monotile"
+
+/singleton/flooring/tiling/dark
+	desc = "How ominous."
+	icon_base = "dark"
+	color = null
+	build_type = /obj/item/stack/tile/floor_dark
+
+/singleton/flooring/tiling/dark/mono
+	icon_base = "monotile"
+
+/singleton/flooring/tiling/freezer
+	desc = "Don't slip."
+	icon_base = "freezer"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/floor_freezer
+
+/singleton/flooring/wood
+	name = "wooden floor"
+	desc = "Polished redwood planks."
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_base = "wood"
+	has_damage_range = 6
+	damage_temperature = T0C+200
+	build_type = /obj/item/stack/tile/wood
+	descriptor = "planks"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_CAN_BURN
+
+/singleton/flooring/new_wood
+	name = "wooden floor"
+	desc = "Polished redwood planks."
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_base = "new_wood"
+	has_damage_range = 6
+	damage_temperature = T0C+200
+	build_type = /obj/item/stack/tile/wood
+	descriptor = "planks"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_CAN_BURN
+
+
+/singleton/flooring/stone
+	name = "stone floor"
+	desc = "Cobblestone flooring"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_base = "MAIN"
+	has_damage_range = 6
+	descriptor = "cobble"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
+
+/singleton/flooring/stone/one
+	icon_base = "extra"
+
+/singleton/flooring/stone/two
+	icon_base = "extra1"
+
+/singleton/flooring/stone/three
+	icon_base = "extra2"
+
+/singleton/flooring/stone/four
+	icon_base = "extra3"
+
+/singleton/flooring/stone/five
+	icon_base = "extra4"
+
+/singleton/flooring/stone/six
+	icon_base = "extra5"
+
+/singleton/flooring/stone/seven
+	icon_base = "extra6"
+
+/singleton/flooring/stone/eight
+	icon_base = "extra7"
+
+/singleton/flooring/reinforced
+	name = "reinforced floor"
+	desc = "Heavily reinforced with steel plating."
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_base = "reinforced"
+	flags = TURF_REMOVE_WRENCH | TURF_ACID_IMMUNE
+	build_type = /obj/item/stack/material/steel
+	build_cost = 1
+	build_time = 30
+	apply_thermal_conductivity = 0.025
+	apply_heat_capacity = 325000
+
+/singleton/flooring/reinforced/circuit
+	name = "processing strata"
+	icon = 'icons/turf/flooring/circuit.dmi'
+	icon_base = "bcircuit"
+	build_type = null
+	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
+
+/singleton/flooring/reinforced/circuit/green
+	icon_base = "gcircuit"
+
+/singleton/flooring/reinforced/circuit/red
+	icon_base = "rcircuit"
+	flags = TURF_ACID_IMMUNE
+
+/singleton/flooring/reinforced/cult
+	name = "engraved floor"
+	desc = "Unsettling whispers waver from the surface..."
+	icon = 'icons/turf/flooring/cult.dmi'
+	icon_base = "cult"
+	build_type = null
+	has_damage_range = 6
+	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
+
+/singleton/flooring/reinforced/shuttle
+	name = "floor"
+	icon = 'icons/turf/shuttle.dmi'
+	build_type = null
+	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
+
+/singleton/flooring/reinforced/shuttle/blue
+	icon_base = "floor"
+
+/singleton/flooring/reinforced/shuttle/yellow
+	icon_base = "floor2"
+
+/singleton/flooring/reinforced/shuttle/white
+	icon_base = "floor3"
+
+/singleton/flooring/reinforced/shuttle/red
+	icon_base = "floor4"
+
+/singleton/flooring/reinforced/shuttle/purple
+	icon_base = "floor5"
+
+/singleton/flooring/reinforced/shuttle/darkred
+	icon_base = "floor6"
+
+/singleton/flooring/reinforced/shuttle/black
+	icon_base = "floor7"
+
+/singleton/flooring/diona
+	name = "biomass"
+	desc = "a mass of small intertwined aliens forming a floor... Creepy."
+	icon = 'icons/turf/floors.dmi'
+	icon_base = "diona"
+	flags = TURF_ACID_IMMUNE | TURF_REMOVE_SHOVEL
+
+/singleton/flooring/reinforced/ramp
+	name = "foot ramp"
+	desc = "An archaic means of locomotion along the Z axis."
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_base = "ramptop"
+	build_type = null
+	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK
+
+/singleton/flooring/reinforced/ramp/bottom
+	icon_base = "rampbot"
+
+/singleton/flooring/diona
+	name = "biomass"
+	desc = "a mass of small intertwined aliens forming a floor... Creepy."
+	icon = 'icons/turf/floors.dmi'
+	icon_base = "diona"
+	flags = TURF_ACID_IMMUNE | TURF_REMOVE_SHOVEL
+
+/singleton/flooring/snow
+	name = "snow"
+	desc = "Mixed snow"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_base = "MAIN"
+	has_damage_range = 6
+	descriptor = "snow"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
