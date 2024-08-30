@@ -168,6 +168,8 @@
 	one_hand_penalty = 2
 	fire_delay = 4
 	accuracy = 0
+	self_recharge = 1
+	recharge_time = 60
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/beam/lasgun
@@ -270,6 +272,21 @@
 		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=43, burst=3, burst_delay=2, fire_delay=4.7),
 		)
 
+/obj/item/gun/energy/las/laspistol/lucius
+	name = "Lucius-pattern Laspistol"
+	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge to have the same output as a rifle"
+	icon_state = "luciuspistol"
+	accuracy = 0
+	charge_cost = 38
+	fire_delay = 4.5
+	cell_type = /obj/item/cell/device/high
+	sales_price = 25
+
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=38, burst=1, burst_delay=2.2, fire_delay=4.5),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=48, burst=3, burst_delay=2.2, fire_delay=5.5),
+		)
+
 /obj/item/gun/energy/lasgun/laspistol/accatran
 	name = "Accatran MK II Pattern Laspistol"
 	desc = "An older pattern of the Accatran Laspistols. Fully auto but extremely power inefficient and somewhat inaccurate."
@@ -296,6 +313,8 @@
 	charge_meter = FALSE // no charge icon
 	accuracy = 0.5
 	fire_delay = 4
+	self_recharge = 1
+	recharge_time = 7
 	charge_cost = 33
 	cell_type = /obj/item/cell/device/high/xenos
 	projectile_type = /obj/item/projectile/beam/lasgun
@@ -469,6 +488,7 @@
 	fire_delay = 4.5
 	accuracy = 0.1
 	self_recharge = 1
+	recharge_time = 9
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/beam/lasgun/hotshot
@@ -524,7 +544,7 @@
 
 /obj/item/gun/energy/lasgun/hotshot/volkite
 	name = "Mars-Omega Pattern Volkite Caliver"
-	desc = "An exceedingly rare rifle usually only used by the Adeptus Astartes. This rifle might be thousands of years old. It is powered by normal lasgun power packs."
+	desc = "The Mars-Omega Pattern Volkite Caliver is a revered weapon of ancient design, rarely seen outside the most elite units of the Adeptus Astartes. It utilizes a Volkite emitter to unleash intense beams of particle energy that incinerate targets with terrifying precision."
 	icon_state = "volkite"
 	item_state = "hevluscius"
 	charge_meter = TRUE
@@ -535,6 +555,7 @@
 	fire_delay = 4.5
 	accuracy = 0.2
 	self_recharge = 1
+	recharge_time = 11
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/beam/incendiary_laser
@@ -547,6 +568,138 @@
 	firemodes = list(
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/incendiary_laser, charge_cost=40, burst=1, burst_delay=2.2, fire_delay=4.5)
 		)
+
+//Tau weapons
+
+/obj/item/gun/energy/tau/ionrifle
+	name = "ION Cannon"
+	desc = "The ION Cannon is a Tau weapon that projects a concentrated beam of ionized particles. Upon impact, it releases a burst of high-energy ions This advanced technology delivers precise and powerful shots, effective against both infantry and armored targets."
+	icon_state = "ionriflet"
+	item_state = "ionriflet"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	one_hand_penalty = 3
+	accuracy = 1
+	origin_tech = list(TECH_COMBAT = 7, TECH_MAGNET = 7)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/ion
+	cell_type = /obj/item/cell/device/high/xenos // consider messing around with power_supply code later to set specific cell requirements.
+	wielded_item_state = "ionriflet-wielded"
+	sales_price = 100
+	fire_delay = 12
+	charge_cost = 70
+	self_recharge = 1
+	recharge_time = 20
+
+/obj/item/gun/energy/tau/ionrifle/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.25
+	slowdown_per_slot[slot_belt] = 0.25
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
+/obj/item/gun/energy/tau/pulsepistol
+	name = "pulse pistol" // Higher damage then hellpistol but slower firing and higher charge cost. Low accuracy as well.
+	desc = "The trusty sidearm of the T'au Empire."
+	icon_state = "pulsep"
+	item_state = "pulsep"
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
+	w_class = ITEM_SIZE_NORMAL
+	force = 12
+	accuracy = -0.5
+	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulsepistol
+	cell_type = /obj/item/cell/device/high/xenos
+	sales_price = 49
+	charge_cost = 65
+	fire_delay = 5.4
+	wielded_item_state = "pulsep"
+	self_recharge = 1
+	recharge_time = 8
+
+/obj/item/gun/energy/tau/pulsepistol/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_belt] = 0
+	slowdown_per_slot[slot_r_hand] = 0.1
+	slowdown_per_slot[slot_l_hand] = 0.1
+
+/obj/item/gun/energy/tau/pulserifle
+	name = "pulse rifle" // Fires the same round as pulse pistol but better stats. 4-round burst with slightly better burst rate then lasguns.
+	desc = "The standard-issue pulse rifle of the Fire Warrior Caste"
+	icon_state = "pulseb"
+	item_state = "pulseb"
+	slot_flags = SLOT_BELT|SLOT_BACK
+	w_class = ITEM_SIZE_LARGE
+	force = 14
+	accuracy = 0
+	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulserifle
+	cell_type = /obj/item/cell/device/high/xenos
+	sales_price = 69
+	charge_cost = 45
+	fire_delay = 4.8
+	wielded_item_state = "pulseb_wielded"
+	self_recharge = 1
+	recharge_time = 8
+	firemodes = list(
+		list(mode_name="single", projectile_type=/obj/item/projectile/energy/pulserifle, charge_cost=45, burst=1, burst_delay=2.4, fire_delay=4.8),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/energy/pulserifle, charge_cost=45, burst=4, burst_delay=2.2, fire_delay=4.8)
+		)
+
+/obj/item/gun/energy/tau/pulserifle/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.2
+	slowdown_per_slot[slot_l_hand] = 0.2
+
+/obj/item/gun/energy/plasma // to-do. make astartes variant with ext_heavy
+	name = "plasma"
+	desc = "If you see this complain that staff used the wrong object"
+	icon_state = "prifle"
+	item_state = "plasmarifle"
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	one_hand_penalty = 3 //heavy af fam
+	accuracy = -0.5
+	self_recharge = 1
+	// recharge_time = 19
+	fire_delay = 15
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/bullet/heavyplasma
+	cell_type = /obj/item/cell/device/high/mechanicus
+	charge_cost = 80
+	wielded_item_state = "plasmarifle-wielded"
+
+/* // this shit doesnt work for now
+	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
+	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
+	var/plasma_overheat_max = 200 // When the gun exploads
+	Fire(atom/target, mob/living/user)
+		if(plasma_overheat >= 50)
+			to_chat(user, "<span class='warning'><b><font size=3>THE BARREL STARTS TO GLOW.</font></b></span>")
+		if(plasma_overheat >= 90)
+			to_chat(user, "<span class='warning'><b><font size=3>OVERHEAT WARNING.</font></b></span>")
+		if(plasma_overheat >= 150)
+			to_chat(user, "<span class='warning'><b><font size=3>CATASTROPHIC FAILURE IMMINENT.</font></b></span>")
+		..()
+		plasma_overheat += 30 // adding 30 heat for every pulling of the trigger (learn not to spam the fucking gun)
+	Process()
+		..()
+		if(plasma_overheat >= 0)
+			plasma_overheat -= plasma_overheat_decay // so the gun actually cools down
+		else
+			plasma_overheat = 0 // keepin the gun overheat above -1
+			return
+		if(plasma_overheat > plasma_overheat_max)
+			explosion(src.loc, -1, -1, 3, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
+*/
 
 
 

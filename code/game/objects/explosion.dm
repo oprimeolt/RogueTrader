@@ -77,8 +77,8 @@
 				far_volume += (dist <= far_dist * 0.5 ? 50 : 0) // add 50 volume if the mob is pretty close to the explosion
 				M.playsound_local(epicenter, 'sound/effects/explosionfar.ogg', far_volume, 1, frequency, falloff = 5)
 
-	if(adminlog)
-		log_and_message_admins("Explosion with size ([devastation_range], [heavy_impact_range], [light_impact_range]) in area [epicenter.loc.name] ([epicenter.x],[epicenter.y],[epicenter.z]).", null, epicenter)
+	//if(adminlog)
+	//	log_and_message_admins("Explosion with size ([devastation_range], [heavy_impact_range], [light_impact_range]) in area [epicenter.loc.name] ([epicenter.x],[epicenter.y],[epicenter.z]).", null, epicenter)
 	var/approximate_intensity = (devastation_range * 3) + (heavy_impact_range * 2) + light_impact_range
 	// Large enough explosion. For performance reasons, powernets will be rebuilt manually
 	if(!GLOB.defer_powernet_rebuild && (approximate_intensity > 25))
