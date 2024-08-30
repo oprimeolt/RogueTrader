@@ -1345,3 +1345,368 @@ var/global/list/floor_decals = list()
 
 /obj/floor_decal/stoneborder/corner
 	icon_state = "stoneborder_c"
+
+/obj/effect/floor_decal/newcorner/plazaf
+	icon_state = "plazaf"
+/obj/effect/floor_decal/newcorner/plazaf/quarter
+	icon_state = "plazaf-quarter"
+/obj/effect/floor_decal/newcorner/plazaf/diagonal
+	icon_state = "plazaf-diagonal"
+/obj/effect/floor_decal/newcorner/plazaf/corner
+	icon_state = "plazaf-corner"
+
+/obj/effect/floor_decal/newcorner/plazafalt
+	icon_state = "plazaf2"
+/obj/effect/floor_decal/newcorner/plazafalt/quarter
+	icon_state = "plazaf2-quarter"
+/obj/effect/floor_decal/newcorner/plazafalt/diagonal
+	icon_state = "plazaf2-quarter"
+/obj/effect/floor_decal/newcorner/plazafalt/corner
+	icon_state = "plazaf2-corner"
+
+/obj/effect/floor_decal/newcorner/bar
+	icon_state = "bar"
+/obj/effect/floor_decal/newcorner/bar/quarter
+	icon_state = "bar-quarter"
+/obj/effect/floor_decal/newcorner/bar/corner
+	icon_state = "bar-corner"
+/obj/effect/floor_decal/newcorner/bar/diagonal
+	icon_state = "bar-diagonal"
+
+/obj/effect/floor_decal/newcorner/cafe
+	icon_state = "cafe"
+/obj/effect/floor_decal/newcorner/cafe/quarter
+	icon_state = "cafe-quarter"
+/obj/effect/floor_decal/newcorner/cafe/corner
+	icon_state = "cafe-corner"
+/obj/effect/floor_decal/newcorner/cafe/diagonal
+	icon_state = "cafe-diagonal"
+
+/obj/effect/floor_decal/newcorner/plating
+	icon_state = "plating"
+/obj/effect/floor_decal/newcorner/plating/quarter
+	icon_state = "plating-quarter"
+/obj/effect/floor_decal/newcorner/plating/corner
+	icon_state = "plating-corner"
+/obj/effect/floor_decal/newcorner/plating/diagonal
+	icon_state = "plating-diagonal"
+
+/obj/effect/floor_decal/newcorner/polar
+	icon_state = "polar"
+/obj/effect/floor_decal/newcorner/polar/quarter
+	icon_state = "polar-quarter"
+/obj/effect/floor_decal/newcorner/polar/corner
+	icon_state = "polar-corner"
+
+/obj/effect/floor_decal/newcorner/reinforced
+	icon_state = "reinforced"
+/obj/effect/floor_decal/newcorner/reinforced/corner
+	icon_state = "rcorner"
+
+/obj/effect/floor_decal/newcorner/train
+	icon_state = "train"
+/obj/effect/floor_decal/newcorner/train/corner
+	icon_state = "train_c"
+
+/obj/effect/floor_decal/newcorner/train2
+	icon_state = "train2"
+/obj/effect/floor_decal/newcorner/train2/corner
+	icon_state = "train2_c"
+
+/obj/effect/floor_decal/newcorner/shaft
+	icon_state = "shaftplating"
+/obj/effect/floor_decal/newcorner/shaft/quarter
+	icon_state = "shaftplating-quarter"
+/obj/effect/floor_decal/newcorner/shaft/corner
+	icon_state = "shaftplating-corner"
+/obj/effect/floor_decal/newcorner/shaft/diagonal
+	icon_state = "shaftplating-diagonal"
+
+/obj/effect/floor_decal/newcorner/step
+	icon_state = "step"
+/obj/effect/floor_decal/newcorner/step_i
+	icon_state = "step_i"
+
+/obj/effect/floor_decal/newcorner/nbar
+	icon_state = "nbar"
+/obj/effect/floor_decal/newcorner/nbar/corner
+	icon_state = "nbar_corner"
+
+/obj/effect/floor_decal/newcorner/dwood
+	icon_state = "dwood"
+
+/obj/effect/floor_decal/industrial/direction
+	icon_state = "dir_white"
+/obj/effect/floor_decal/industrial/direction/black
+	icon_state = "dir_black"
+
+/obj/effect/floor_decal/industrial/mark
+	icon_state = "mark_white"
+/obj/effect/floor_decal/industrial/mark/black
+	icon_state = "mark_black"
+
+/obj/effect/floor_decal/industrial/punctuation
+	icon_state = "punctuation_white"
+/obj/effect/floor_decal/industrial/punctuation/black
+	icon_state = "punctuation_black"
+
+/obj/effect/floor_decal/industrial/plaza
+	icon_state = "plaza"
+/obj/effect/floor_decal/industrial/plaza/box
+	icon_state = "plazabox"
+
+/obj/effect/floor_decal/turf/bloodbar
+	icon_state = "bloodbar"
+/obj/effect/floor_decal/turf/bloodbar/off
+	icon_state = "bloodbar2"
+/obj/effect/floor_decal/turf/bar
+	icon_state = "barfull"
+/obj/effect/floor_decal/turf/bar2
+	icon_state = "bar2"
+/obj/effect/floor_decal/turf/bar3
+	icon_state = "bar3"
+
+/obj/effect/floor_decal/turf/cafe
+	icon_state = "cafefull"
+/obj/effect/floor_decal/turf/cafe2
+	icon_state = "cafe2"
+
+/obj/effect/floor_decal/turf/shaft
+	icon_state = "shaft"
+/obj/effect/floor_decal/turf/coldroom
+	icon_state = "coldroom"
+/obj/effect/floor_decal/turf/steel
+	icon_state = "steel"
+
+/obj/effect/floor_decal/turf/piping
+	icon = 'icons/map_project/piping.dmi'
+	icon_state = "trubas"
+
+/obj/effect/floor_decal/turf/big_cables1
+	icon = 'icons/map_project/piping.dmi'
+	icon_state = "cable0"
+
+/obj/effect/floor_decal/turf/big_cables2
+	icon = 'icons/map_project/piping.dmi'
+	icon_state = "cable1"
+
+/obj/effect/floor_decal/turf/armory
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "arm1"
+//////////////////////////////////
+////////// NEW FLOORING //////////
+//////////////////////////////////
+
+// Even Newer
+/obj/effect/floor_decal/turf/grimy
+	name = "grimy floor"
+	icon = 'icons/turf/flooring/floors.dmi' // It will break without this.
+	icon_state = "grimy"
+
+/obj/effect/floor_decal/turf/nf2
+	name = "stone floor"
+	icon = 'icons/turf/flooring/floors.dmi'
+	icon_state = "nf2"
+
+/obj/effect/floor_decal/turf/lfloorscorched1
+	name = "scorched floor"
+	icon = 'icons/turf/flooring/floors.dmi'
+	icon_state = "lfloorscorched1"
+
+// Slightly New
+/obj/effect/floor_decal/turf/basalt0
+	name = "volcanic floor"
+	icon_state = "basalt0"
+
+/obj/effect/floor_decal/turf/basalt1
+	name = "volcanic floor"
+	icon_state = "basalt1"
+
+/obj/effect/floor_decal/turf/basalt3
+	name = "volcanic floor"
+	icon_state = "basalt3"
+
+/obj/effect/floor_decal/turf/basalt9
+	name = "volcanic floor"
+	icon_state = "basalt9"
+
+/obj/effect/floor_decal/turf/basalt10
+	name = "volcanic floor"
+	icon_state = "basalt10"
+
+/obj/effect/floor_decal/turf/necro1
+	name = "infestation"
+	icon_state = "necro1"
+
+/obj/effect/floor_decal/turf/necro2
+	name = "infestation"
+	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
+	icon_state = "flesh_floor-1"
+
+/obj/effect/floor_decal/turf/necro3
+	name = "infestation"
+	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
+	icon_state = "flesh_floor-2"
+
+/obj/effect/floor_decal/turf/necro4
+	name = "infestation"
+	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
+	icon_state = "flesh_floor-3"
+
+/*
+/obj/effect/floor_decal/turf/necro2
+	name = "horrific infestation"
+	desc = "You notice sharp teeth beneath it's flesh."
+	icon_state = "necro2" */
+
+/obj/effect/floor_decal/turf/oldsmoothdirt
+	name = "dirt floor"
+	icon_state = "oldsmoothdirt"
+
+/obj/effect/floor_decal/turf/tunneldirty
+	name = "tunnel floor"
+	icon_state = "tunneldirty"
+
+/obj/effect/floor_decal/turf/tunnelchess
+	name = "tunnel floor"
+	icon_state = "tunnelchess"
+
+/obj/effect/floor_decal/turf/carpetn00
+	name = "carpet floor"
+	icon_state = "n00"
+
+/obj/effect/floor_decal/turf/surgery2
+	name = "surgery floor"
+	icon_state = "surgery2"
+
+/obj/effect/floor_decal/turf/brothel
+	name = "brothel floor"
+	icon_state = "brothel"
+
+/obj/effect/floor_decal/turf/clockwork
+	name = "alien floor"
+	icon_state = "clockwork"
+
+//////////////////////////////////
+//////// REGULAR FLOORING ////////
+//////////////////////////////////
+
+/obj/effect/floor_decal/turf/aesculapius
+	icon_state = "aesculapius"
+/obj/effect/floor_decal/turf/aesculapius/mem
+	icon_state = "mem"
+/obj/effect/floor_decal/turf/aesculapius/mento
+	icon_state = "mento"
+/obj/effect/floor_decal/turf/aesculapius/mori
+	icon_state = "mori"
+
+/obj/effect/floor_decal/turf/plating
+	icon_state = "platingfull"
+
+/obj/effect/floor_decal/turf/plate
+	icon_state = "plate"
+
+/obj/effect/floor_decal/turf/barnew
+	icon_state = "barnew"
+
+/obj/effect/floor_decal/turf/splate
+	icon_state = "shaftplating"
+
+/obj/effect/floor_decal/turf/checkers
+	icon_state = "checkers1"
+
+/obj/effect/floor_decal/turf/checkers/two
+	icon_state = "checkers2"
+
+/obj/effect/floor_decal/turf/rectangles
+	icon_state = "rectangles1"
+
+
+/obj/effect/floor_decal/turf/rectangles/two
+	icon_state = "rectangles2"
+
+/obj/effect/floor_decal/turf/brick
+	icon_state = "brick1"
+
+/obj/effect/floor_decal/turf/brick/two
+	icon_state = "brick2"
+
+/obj/effect/floor_decal/turf/metal
+	icon_state = "metal1"
+
+/obj/effect/floor_decal/turf/metal/two
+	icon_state = "metal2"
+
+/obj/effect/floor_decal/turf/metal/three
+	icon_state = "metal3"
+
+/obj/effect/floor_decal/turf/metal/four
+	icon_state = "metal4"
+
+/obj/effect/floor_decal/turf/metal/five
+	icon_state = "metal5"
+
+/obj/effect/floor_decal/turf/metal/six
+	icon_state = "metal6"
+
+/obj/effect/floor_decal/turf/metal/seven
+	icon_state = "metal7"
+
+/obj/effect/floor_decal/turf/metal/eight
+	icon_state = "metal8"
+
+/obj/effect/floor_decal/turf/metal/nine
+	icon_state = "metal9"
+
+/obj/effect/floor_decal/turf/metal/ten
+	icon_state = "metal10"
+
+/obj/effect/floor_decal/turf/metal/metal_wall
+	name = "metal wall"
+	icon_state = "2"
+
+
+/obj/effect/floor_decal/newcorner/stone
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "sborder1"
+
+/obj/effect/floor_decal/newcorner/stone/corner
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "sborder2"
+
+/obj/effect/floor_decal/newcorner/caveramp
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "caveramp"
+
+/obj/effect/floor_decal/newcorner/grass
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "grass1"
+
+/obj/effect/floor_decal/newcorner/trench_flooring
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "trench_flooring"
+
+/obj/effect/floor_decal/newcorner/mine_walls
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "2"
+
+/obj/effect/floor_decal/newcorner/rails
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "rail"
+	color = "grey" // Else it looks too shining and does not fit
+
+/obj/effect/floor_decal/newcorner/crater_big
+	icon = 'icons/turf/trenches_turfs.dmi'
+	icon_state = "l1"
+
+/obj/effect/floor_decal/newcorner/crater_small
+	icon = 'icons/turf/trenches_turfs.dmi'
+	icon_state = "crater"
+
+/obj/effect/floor_decal/newcorner/entrace
+	icon = 'icons/map_project/gate.dmi'
+	icon_state = "entrance"
+
+/obj/effect/floor_decal/newcorner/brokenwood
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken0"

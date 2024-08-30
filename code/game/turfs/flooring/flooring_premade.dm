@@ -41,37 +41,6 @@
 	light_power = 2
 	light_color = COLOR_BLACK
 
-/turf/simulated/floor/wood
-	name = "wooden floor"
-	icon = 'icons/turf/flooring/wood.dmi'
-	icon_state = "wood"
-	color = WOOD_COLOR_GENERIC
-	initial_flooring = /singleton/flooring/wood
-
-/turf/simulated/floor/wood/mahogany
-	color = WOOD_COLOR_RICH
-	initial_flooring = /singleton/flooring/wood/mahogany
-
-/turf/simulated/floor/wood/maple
-	color = WOOD_COLOR_PALE
-	initial_flooring = /singleton/flooring/wood/maple
-
-/turf/simulated/floor/wood/ebony
-	color = WOOD_COLOR_BLACK
-	initial_flooring = /singleton/flooring/wood/ebony
-
-/turf/simulated/floor/wood/walnut
-	color = WOOD_COLOR_CHOCOLATE
-	initial_flooring = /singleton/flooring/wood/walnut
-
-/turf/simulated/floor/wood/bamboo
-	color = WOOD_COLOR_PALE2
-	initial_flooring = /singleton/flooring/wood/bamboo
-
-/turf/simulated/floor/wood/yew
-	color = WOOD_COLOR_YELLOW
-	initial_flooring = /singleton/flooring/wood/yew
-
 /turf/simulated/floor/grass
 	name = "grass patch"
 	icon = 'icons/turf/flooring/grass.dmi'
@@ -87,57 +56,6 @@
 
 /turf/simulated/floor/grass/cut
 	initial_flooring = /singleton/flooring/grass/cut
-
-/turf/simulated/floor/carpet
-	name = "brown carpet"
-	icon = 'icons/turf/flooring/carpet.dmi'
-	icon_state = "brown"
-	initial_flooring = /singleton/flooring/carpet
-
-/turf/simulated/floor/carpet/blue
-	name = "blue carpet"
-	icon_state = "blue1"
-	initial_flooring = /singleton/flooring/carpet/blue
-
-/turf/simulated/floor/carpet/blue2
-	name = "pale blue carpet"
-	icon_state = "blue2"
-	initial_flooring = /singleton/flooring/carpet/blue2
-
-/turf/simulated/floor/carpet/blue3
-	name = "sea blue carpet"
-	icon_state = "blue3"
-	initial_flooring = /singleton/flooring/carpet/blue3
-
-/turf/simulated/floor/carpet/magenta
-	name = "magenta carpet"
-	icon_state = "magenta"
-	initial_flooring = /singleton/flooring/carpet/magenta
-
-/turf/simulated/floor/carpet/purple
-	name = "purple carpet"
-	icon_state = "purple"
-	initial_flooring = /singleton/flooring/carpet/purple
-
-/turf/simulated/floor/carpet/orange
-	name = "orange carpet"
-	icon_state = "orange"
-	initial_flooring = /singleton/flooring/carpet/orange
-
-/turf/simulated/floor/carpet/green
-	name = "green carpet"
-	icon_state = "green"
-	initial_flooring = /singleton/flooring/carpet/green
-
-/turf/simulated/floor/carpet/red
-	name = "red carpet"
-	icon_state = "red"
-	initial_flooring = /singleton/flooring/carpet/red
-
-/turf/simulated/floor/carpet/black
-	name = "black carpet"
-	icon_state = "black"
-	initial_flooring = /singleton/flooring/carpet/black
 
 /turf/simulated/floor/reinforced
 	name = "reinforced floor"
@@ -416,3 +334,369 @@
 			SPAN_WARNING("You feel your entire body tingle, and something pulling you away!")
 		)
 		addtimer(new Callback(GLOBAL_PROC, /proc/do_unstable_teleport_safe, L, GetConnectedZlevels(L.z)), rand(5, 15))
+
+// WARHAMMER 40k //
+
+/turf/simulated/floor/wood
+	name = "wooden floor"
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood"
+	color = WOOD_COLOR_GENERIC
+	initial_flooring = /singleton/flooring/wood
+
+/turf/simulated/floor/wood/mahogany
+	color = WOOD_COLOR_RICH
+	initial_flooring = /singleton/flooring/wood/mahogany
+
+/turf/simulated/floor/wood/maple
+	color = WOOD_COLOR_PALE
+	initial_flooring = /singleton/flooring/wood/maple
+
+/turf/simulated/floor/wood/ebony
+	color = WOOD_COLOR_BLACK
+	initial_flooring = /singleton/flooring/wood/ebony
+
+/turf/simulated/floor/wood/walnut
+	color = WOOD_COLOR_CHOCOLATE
+	initial_flooring = /singleton/flooring/wood/walnut
+
+/turf/simulated/floor/wood/bamboo
+	color = WOOD_COLOR_PALE2
+	initial_flooring = /singleton/flooring/wood/bamboo
+
+/turf/simulated/floor/wood/yew
+	color = WOOD_COLOR_YELLOW
+	initial_flooring = /singleton/flooring/wood/yew
+
+/turf/simulated/floor/new_wood
+	name = "wooden floor"
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "new_wood"
+	initial_flooring = /singleton/flooring/new_wood
+
+/turf/simulated/floor/new_wood/two
+	icon_state = "new_wood2"
+
+/turf/simulated/floor/new_wood/three
+	icon_state = "new_wood3"
+
+/turf/simulated/floor/new_wood/four
+	icon_state = "new_wood4"
+/turf/simulated/floor/new_wood/five
+	icon_state = "new_wood5"
+/turf/simulated/floor/new_wood/six
+	icon_state = "new_wood6"
+/turf/simulated/floor/new_wood/seven
+	icon_state = "new_wood7"
+/turf/simulated/floor/new_wood/eight
+	icon_state = "new_wood8"
+/turf/simulated/floor/new_wood/nine
+	icon_state = "new_wood9"
+
+/turf/simulated/floor/stone
+	name = "stone floor"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_state = "MAIN"
+	initial_flooring = /singleton/flooring/stone
+
+/turf/simulated/floor/stone/chapel
+	name = "monastic stone floor"
+	holy = 1
+
+/turf/simulated/floor/stone/New()
+	icon_state = pick("main","1","2","3","extra","extra1","extra2","extra3")
+	..()
+
+/turf/simulated/floor/seolite
+	name = "Seolite floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "cluster"
+
+/turf/simulated/floor/tiled/stone
+	name = "stone tiled floor"
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_state = "stone"
+	color = "#808080"
+	initial_flooring = /singleton/flooring/tiling/stone
+
+/turf/simulated/floor/carpet
+	name = "brown carpet"
+	icon = 'icons/turf/flooring/carpet.dmi'
+	icon_state = "brown"
+	initial_flooring = /singleton/flooring/carpet
+
+/turf/simulated/floor/carpet/blue
+	name = "blue carpet"
+	icon_state = "blue1"
+	initial_flooring = /singleton/flooring/carpet/blue
+
+/turf/simulated/floor/carpet/blue2
+	name = "pale blue carpet"
+	icon_state = "blue2"
+	initial_flooring = /singleton/flooring/carpet/blue2
+
+/turf/simulated/floor/carpet/blue3
+	name = "sea blue carpet"
+	icon_state = "blue3"
+	initial_flooring = /singleton/flooring/carpet/blue3
+
+/turf/simulated/floor/carpet/magenta
+	name = "magenta carpet"
+	icon_state = "magenta"
+	initial_flooring = /singleton/flooring/carpet/magenta
+
+/turf/simulated/floor/carpet/purple
+	name = "purple carpet"
+	icon_state = "purple"
+	initial_flooring = /singleton/flooring/carpet/purple
+
+/turf/simulated/floor/carpet/orange
+	name = "orange carpet"
+	icon_state = "orange"
+	initial_flooring = /singleton/flooring/carpet/orange
+
+/turf/simulated/floor/carpet/green
+	name = "green carpet"
+	icon_state = "green"
+	initial_flooring = /singleton/flooring/carpet/green
+
+/turf/simulated/floor/carpet/red
+	name = "red carpet"
+	icon_state = "red"
+	initial_flooring = /singleton/flooring/carpet/red
+
+/turf/simulated/floor/carpet/black
+	name = "black carpet"
+	icon_state = "black"
+	initial_flooring = /singleton/flooring/carpet/black
+
+/turf/simulated/floor/tiled/dark
+	name = "dark floor"
+	icon_state = "dark"
+	initial_flooring = /singleton/flooring/tiling/dark
+
+/turf/simulated/floor/tiled/ramp
+	name = "foot ramp"
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_state = "ramptop"
+	initial_flooring = /singleton/flooring/reinforced/ramp
+
+/turf/simulated/floor/tiled/ramp/bottom
+	name = "foot ramp"
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_state = "rampbot"
+	initial_flooring = /singleton/flooring/reinforced/ramp/bottom
+
+/turf/simulated/floor/concrete
+	name = "concrete floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "concrete"
+
+/turf/simulated/floor/darkfloor
+	name = "steel dark floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "steel_dark"
+
+/turf/simulated/floor/darksteel_floor
+	name = "steel floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "steelnew"
+
+/turf/simulated/floor/surface_floor
+	name = "surface"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "surface"
+
+/turf/simulated/floor/factory_floor
+	name = "plated floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "lev"
+
+// Ceramic Flooring
+
+/turf/simulated/floor/ceramic
+	name = "ceramic flooring"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "newstone2"
+
+/turf/simulated/floor/ceramic/surgery
+	name = "grey ceramic flooring"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "surgery"
+
+/turf/simulated/floor/ceramic/surgery2
+	name = "grey ceramic flooring"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "surgery2"
+
+/turf/simulated/floor/ceramic/old
+	name = "ceramic flooring"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "newstone4"
+
+/turf/simulated/floor/ceramic/blackstone
+	name = "black ceramic flooring"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "bluestone2"
+
+// Wooden flooring
+
+/turf/simulated/floor/darkwood
+	name = "wooden floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "dark_wood"
+
+/turf/simulated/floor/darkwood/rotten
+	name = "decrepit wooden floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "troom3"
+
+// Fancy floors (For the Gov or some housing)
+
+/turf/simulated/floor/fancyfloor
+	name = "fancy floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "metrofull"
+
+/turf/simulated/floor/fancyfloor/edges
+	name = "fancy floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "metroedges"
+
+/turf/simulated/floor/fancyfloor/marble
+	name = "marble floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "marbletile"
+
+/turf/simulated/floor/fancyfloor/coralg
+	name = "coral granite floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "coralgranite"
+
+/turf/simulated/floor/fancyfloor/gray_white
+	name = "gray & white flooring"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "graywhite"
+
+/turf/simulated/floor/fancyfloor/carpet
+	name = "red carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "carpbet2side"
+
+/turf/simulated/floor/fancyfloor/carpet/middle
+	name = "red carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "carpbet2"
+
+/turf/simulated/floor/fancyfloor/carpet/grey
+	name = "grey carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "carpet2side"
+
+/turf/simulated/floor/fancyfloor/carpet/grey/middle
+	name = "grey carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "carpet2"
+
+/turf/simulated/floor/fancyfloor/carpet/blue
+	name = "blue carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "blucarpet2side"
+
+/turf/simulated/floor/fancyfloor/carpet/blue/middle
+	name = "blue carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "carpet3"
+
+/turf/simulated/floor/fancyfloor/carpet/green
+	name = "green carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "carpbet23side"
+
+/turf/simulated/floor/fancyfloor/carpet/green/middle
+	name = "green carpet"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "carpet0"
+
+/turf/simulated/floor/fancyfloor/oldcobble
+	name = "old cobblestone"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stonefloor4"
+
+/turf/simulated/floor/fancyfloor/ancient_cobble_old
+	name = "dark cobble floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stone_old"
+
+//broken varients of wood turf
+
+/turf/simulated/floor/fancyfloor/brokenfloor0
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken0"
+
+/turf/simulated/floor/fancyfloor/brokenfloor1
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken1"
+
+/turf/simulated/floor/fancyfloor/brokenfloor2
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken2"
+
+/turf/simulated/floor/fancyfloor/brokenfloor3
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken3"
+
+/turf/simulated/floor/fancyfloor/brokenfloor4
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken4"
+
+/turf/simulated/floor/fancyfloor/brokenfloor5
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken5"
+
+// Stone Flooring here
+
+/turf/simulated/floor/stone/crafted_floor
+	name = "stone path"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stonecrafted"
+
+/turf/simulated/floor/stone/old
+	name = "old stone floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stonefloor"
+
+/turf/simulated/floor/stone/old2
+	name = "old stone floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stonefloor2"
+
+/turf/simulated/floor/stone/old3
+	name = "old stone floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stonefloor3"
+
+/turf/simulated/floor/stone/old4
+	name = "old stone floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stonefloor4"
+
+/turf/simulated/floor/stone/ancient_stone_floor
+	name = "ancient stone floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stoney"
+
+/turf/simulated/floor/stone/ancient_stone_old
+	name = "ancient stone floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stone_old"
+
+/turf/simulated/floor/stone/ancient_stone_floor3
+	name = "ancient stone floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stoning"
+
+/turf/simulated/floor/stone/seabed
+	name = "seabed"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "seabed"
