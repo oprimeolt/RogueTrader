@@ -617,7 +617,7 @@
 	cell_type = /obj/item/cell/device/high/xenos // consider messing around with power_supply code later to set specific cell requirements.
 	wielded_item_state = "railgun-wielded"
 	sales_price = 100
-	fire_delay = 12
+	fire_delay = 10
 	charge_cost = 70
 	self_recharge = 1
 	recharge_time = 20
