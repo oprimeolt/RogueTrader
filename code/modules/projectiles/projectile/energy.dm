@@ -255,7 +255,7 @@
 	icon_state = "dark_pellet"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	armor_penetration = 44
-	damage = 48
+	damage = 78
 	damage_type = DAMAGE_BRUTE
 	penetrating = 3
 
@@ -263,6 +263,7 @@
 	// Trigger the explosion effect
 	explosion(src.loc, 1, EX_ACT_LIGHT)
 	..()
+
 
 /obj/item/projectile/bullet/pellet/plasma
 	name = "heavy plasma pulse"

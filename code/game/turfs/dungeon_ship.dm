@@ -107,6 +107,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 /obj/structure/shipdecor
 	name = "Ship Computer"
 	icon = 'icons/map_project/ship/ship_equipment.dmi'
+	layer = 4
 	icon_state = ""
 	desc = "A computer, it seems it's not recieving power."
 	anchored = 1

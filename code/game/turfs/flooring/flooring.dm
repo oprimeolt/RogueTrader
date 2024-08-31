@@ -165,6 +165,7 @@
 	damage_temperature = T0C+1400
 	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN
 	build_type = /obj/item/stack/tile/floor
+	can_paint = 1
 	footstep_type = /singleton/footsteps/tiles
 
 /singleton/flooring/tiling/mono
@@ -426,7 +427,7 @@
 
 // WARHAMMER 40k
 
-/singleton/flooring/tiling
+/singleton/flooring/tiling/steel
 	name = "floor"
 	desc = "Scuffed from the passage of countless menials."
 	icon = 'icons/turf/flooring/tiles.dmi'
