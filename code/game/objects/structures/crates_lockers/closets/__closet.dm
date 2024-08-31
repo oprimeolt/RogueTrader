@@ -26,6 +26,26 @@
 	var/broken = FALSE
 	var/opened = FALSE
 	var/locked = FALSE
+	var/icon_closed = "closed"
+	var/icon_opened = "open"
+
+	var/icon_locked
+	var/icon_broken = "sparks"
+	var/icon_off
+
+/obj/structure/closet/warhammer/update_icon()
+	if(!opened)
+		if(broken && icon_off)
+			icon_state = icon_off
+			overlays += icon_broken
+		else if((setup & CLOSET_HAS_LOCK) && locked && icon_locked)
+			icon_state = icon_locked
+		else
+			icon_state = icon_closed
+		if(welded)
+			overlays += "welded"
+	else
+		icon_state = icon_opened
 
 /obj/structure/closet/Initialize()
 	..()

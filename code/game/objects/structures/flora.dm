@@ -194,6 +194,132 @@
 	..()
 	icon_state = "fullgrass_[rand(1, 3)]"
 
+
+/obj/structure/flora/ausbushes/meatshroom
+	name = "meatshroom"
+	icon_state = "meatshroom1"
+
+/obj/structure/flora/ausbushes/meatshroom/New()
+	..()
+	icon_state = "meatshroom[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/lrock
+	name = "rock"
+	icon_state = "lrock1"
+
+/obj/structure/flora/ausbushes/lrock/New()
+	..()
+	icon_state = "lrock[rand(1, 9)]"
+
+/obj/structure/flora/ausbushes/rock
+	name = "rock"
+	icon_state = "rock1"
+
+/obj/structure/flora/ausbushes/rock/New()
+	..()
+	icon_state = "rock[rand(1, 5)]"
+
+/obj/structure/flora/ausbushes/busha
+	icon_state = "busha1"
+
+/obj/structure/flora/ausbushes/busha/New()
+	..()
+	icon_state = "busha[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/bushab
+	icon_state = "bushab1"
+
+/obj/structure/flora/ausbushes/bushab/New()
+	..()
+	icon_state = "bushab[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/minishroom
+	icon_state = "minishroom"
+
+/obj/structure/flora/ausbushes/minishroom/New()
+	..()
+	icon_state = "minishroom"
+
+
+
+/obj/structure/flora/yes/armok
+	desc = "A statue carved from rock. It roars with noxious fury."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "ARMOK"
+
+/obj/structure/flora/yes/baccus
+	desc = "A statue carved from rock. It twists in a silent scream."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "BACCUS"
+
+/obj/structure/flora/yes/cross
+	desc = "A statue carved from rock. It is elaborately shaped into a cross."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "cross"
+
+/obj/structure/flora/yes/erista
+	desc = "A statue carved from rock. It mocks with a suggestive gloat."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "ERISTA"
+
+/obj/structure/flora/yes/thoth
+	desc = "A statue carved from rock. It droops glumly in endless thought."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "THOTH"
+
+/obj/structure/flora/yes/veles
+	desc = "A statue carved from rock. It casts a stern visage."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "VELES"
+
+/obj/structure/flora/yes/rock3
+	desc = "A statue carved from rock. The elements have deteriorated it beyond recognition."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "rock3"
+
+/obj/structure/flora/yes/rock4
+	desc = "A statue carved from rock. The elements have deteriorated it beyond recognition."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "rock4"
+
+/obj/structure/flora/yes/sadshroom
+	desc = "A lumpy mixture of rock and fungus. It's rugged and gloomy."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "sadshroom"
+
+/obj/structure/flora/yes/shroomlog5
+	desc = "A pile of logs all set for the furnace."
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "shroomlog5"
+
+/obj/structure/flora/yes/wooden_tv
+	desc = "An archaic display. This hasn't worked for a long time."
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	icon_state = "wooden_tv"
+
+/obj/structure/flora/yes/washer
+	desc = "A rusted washer. This hasn't worked for a long time."
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	icon_state = "washer0"
+
+/obj/structure/flora/yes/plant
+	desc = "A potted plant. Close inspection reveals the fine leaves are artifical."
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	icon_state = "plant"
+
+/obj/structure/flora/jungle
+	anchored = TRUE
+	mouse_opacity = 0
+
+	New()
+		..()
+		set_light(3, 3, "#28284f")
+
+/obj/structure/flora/jungle/trees
+	name = "jungle tree"
+	icon = 'icons/obj/flora/jungletrees.dmi'
+	icon_state = "tree1"
+	desc = "A big hunk of wood that gets in the way of you, and who you're trying to shoot."
 //potted plants credit: Flashkirby
 //potted plants 27-30: Cajoes
 /obj/structure/flora/pottedplant
