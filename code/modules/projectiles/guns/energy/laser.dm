@@ -583,11 +583,39 @@
 	accuracy = 1
 	origin_tech = list(TECH_COMBAT = 7, TECH_MAGNET = 7)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/ion
+	projectile_type = /obj/item/projectile/bullet/heavyplasma
 	cell_type = /obj/item/cell/device/high/xenos // consider messing around with power_supply code later to set specific cell requirements.
 	wielded_item_state = "ionriflet-wielded"
 	sales_price = 100
-	fire_delay = 12
+	fire_delay = 13
+	charge_cost = 70
+	self_recharge = 1
+	recharge_time = 20
+
+/obj/item/gun/energy/tau/ionrifle/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.25
+	slowdown_per_slot[slot_belt] = 0.25
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
+/obj/item/gun/energy/tau/railgun
+	name = "Rail Gun"
+	desc = "The Railgun is a Tau weapon that accelerates high-density projectiles using magnetic fields. Upon impact, it delivers a precise and penetrating shot with overwhelming kinetic force. This sophisticated technology is effective against both infantry and heavily armored units."
+	icon_state = "ionriflet"
+	item_state = "ionriflet"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	one_hand_penalty = 3
+	accuracy = 1
+	origin_tech = list(TECH_COMBAT = 7, TECH_MAGNET = 7)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/bullet/railgun
+	cell_type = /obj/item/cell/device/high/xenos // consider messing around with power_supply code later to set specific cell requirements.
+	wielded_item_state = "ionriflet-wielded"
+	sales_price = 100
+	fire_delay = 10
 	charge_cost = 70
 	self_recharge = 1
 	recharge_time = 20

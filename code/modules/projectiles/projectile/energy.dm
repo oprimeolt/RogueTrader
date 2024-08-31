@@ -246,9 +246,23 @@
 	icon_state = "pulse1"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	armor_penetration = 41
-	damage = 28
-	agony = 40
+	damage = 48
+	agony = 20
 	damage_type = DAMAGE_BURN
+
+/obj/item/projectile/bullet/railgun
+	name = "metal slug"
+	icon_state = "dark_pellet"
+	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
+	armor_penetration = 44
+	damage = 48
+	damage_type = DAMAGE_BRUTE
+	penetrating = 3
+
+/obj/item/projectile/bullet/railgun/on_hit(atom/target)
+	// Trigger the explosion effect
+	explosion(src.loc, 1, EX_ACT_LIGHT)
+	..()
 
 /obj/item/projectile/bullet/pellet/plasma
 	name = "heavy plasma pulse"

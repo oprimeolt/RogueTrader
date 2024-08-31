@@ -17,7 +17,7 @@
 	icon = 'icons/map_project/port/van.dmi'
 	icon_state = "van_base"
 
-/obj/structure/closet/crate/xenos/cargo8
+/obj/structure/closet/warhammer/crate/xenos/cargo8
 	name = "Cargo-8"
 	desc = "An ancient cargo hauler of imperial design."
 	icon = 'icons/map_project/port/van.dmi'
@@ -256,14 +256,14 @@
 	density = 0
 
 // Racks, crates and tables
-/*
+
 /obj/structure/table/rack/xenos
 	name = "strange rack"
 	desc ="An organic xenos resin seemss to be growing from the metal."
 	icon = 'icons/map_project/port/objects.dmi'
 	icon_state = "rack"
 
-/obj/structure/closet/crate/xenos
+/obj/structure/closet/warhammer/crate/xenos
 	name = "secure crate"
 	desc = "A xenos secure crate."
 	icon = 'icons/map_project/port/objects.dmi'
@@ -271,28 +271,29 @@
 	icon_opened = "secure_crate2"
 	icon_closed = "secure_crate"
 
-/obj/structure/closet/crate/xenos/chest
+/obj/structure/closet/warhammer/crate/xenos/chest
 	name = "secure chest"
 	desc = "A xenos secure chest."
 	icon_state = "chest"
 	icon_opened = "chest2"
 	icon_closed = "chest"
+	req_access = list(access_security)
 
-/obj/structure/closet/crate/xenos/chest2
+/obj/structure/closet/warhammer/crate/xenos/chest2
 	name = "secure chest"
 	desc = "A xenos secure chest."
 	icon_state = "chest_white"
 	icon_opened = "chest_white2"
 	icon_closed = "chest_white"
 
-/obj/structure/closet/crate/xenos/chest3
+/obj/structure/closet/warhammer/crate/xenos/chest3
 	name = "secure chest"
 	desc = "A xenos secure chest."
 	icon_state = "crate_ds_blue1"
 	icon_opened = "crate_ds_blue1_open"
 	icon_closed = "crate_ds_blue1"
 
-/obj/structure/closet/crate/xenos/droppod
+/obj/structure/closet/warhammer/crate/xenos/droppod
 	name = "xenos drop pod"
 	desc = "An ancient xenos drop pod."
 	icon = 'icons/map_project/port/droppod_32x64.dmi'
@@ -300,7 +301,7 @@
 	icon_opened = "techpod_open"
 	icon_closed = "techpod_closed"
 
-/obj/structure/closet/crate/secure/safe
+/obj/structure/closet/warhammer/secure_closet/personal/safe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'
@@ -309,7 +310,7 @@
 	icon_closed = "safe"
 	anchored = 1
 
-/obj/structure/closet/crate/secure/floorsafe
+/obj/structure/closet/warhammer/secure_closet/personal/floorsafe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'
@@ -318,7 +319,7 @@
 	icon_closed = "floorsafe"
 	anchored = 1
 	density = 0
-*/
+
 
 // NECRON TOMB - An old mechanicus outpost that was manned by penal units and mechanicus priest studying a tomb, they've been out of contact for several months
 
@@ -505,7 +506,62 @@
 
 
 
+// SEWERS
 
+/obj/structure/sewers/pipe
+	name = "sewer pipe"
+	desc = "A rusted sewage pipe."
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "pipe"
+
+/obj/structure/sewers/brokenpipe
+	name = "broken sewer pipe"
+	desc = "A rusted, broken, sewage pipe."
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "pipe_fucked"
+
+/obj/structure/sewers/smallpipe
+	name = "small ewer pipe"
+	desc = "A rusted, tiny sewage pipe."
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "pipe_small"
+
+/obj/structure/sewers/pipeflow
+	name = "draining sewer pipe"
+	desc = "A rusted, old and incredibly smelly sewage pipe."
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "pipe_flow"
+
+/obj/structure/sewers/pipeflowbrk
+	name = "broken draining sewer pipe"
+	desc = "A rusted, old, broken and incredibly smelly sewage pipe."
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "pipe_flow2"
+
+/obj/structure/sewers/pipeflowsmall
+	name = "tiny draining sewer pipe"
+	desc = "A rusted, small, and incredibly smelly sewage pipe."
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "pipe_flow3"
+
+
+/obj/structure/sewers/wallhole
+	name = "small grated hole"
+	desc = "A grated hole leading to the sewers"
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "wall_hole"
+
+/obj/structure/sewers/wallholebigbrk
+	name = "big broken grated hole"
+	desc = "A large, torn open grated hole leading to the sewers"
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "wall_hole2"
+
+/obj/structure/sewers/wallholebig
+	name = "big grated hole"
+	desc = "A large, grated hole leading to the sewers"
+	icon = 'icons/obj/structures/sewers.dmi'
+	icon_state = "wall_hole3"
 
 
 
