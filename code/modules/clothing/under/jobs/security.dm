@@ -1,8 +1,15 @@
 /*
  * Contains:
- *		Security
+ *		BAY ONES:
+		Security
  *		Detective
  *		Head of Security
+		40K ONES:
+		Militarum
+		Administratum
+		Magistratum
+		Ecceliarchy
+		MISC
  */
 
 /*
